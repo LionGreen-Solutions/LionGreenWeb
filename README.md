@@ -1,2 +1,3 @@
-
+Welcome to Lion Green Solutions
+![Lion Green logo](https://github.com/user-attachments/assets/a2e769cd-d942-4723-b47c-7875c63012a9)
 Lion Green Solutions Ethiopia PLC is an innovative startup focused on e-mobility motorbike supply, and solar energy solutions for electrification. Our services include water pumping systems, home electrification, and other innovative power solutions for sustainable service delivery. Founded in 2021 by a team of experienced professionals, we leverage our expertise in solar energy design and installation to provide sustainable energy solutions that empower communities and promote environmental stewardship.
