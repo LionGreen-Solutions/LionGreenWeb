@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 30% 8%; /* Dark blue-black background like the image */
+    --foreground: 210 15% 90%; /* Light text for contrast */
+
+    --card: 210 30% 12%; /* Slightly lighter card background */
+    --card-foreground: 210 15% 90%;
+
+    --popover: 210 30% 12%;
+    --popover-foreground: 210 15% 90%;
+
+    --primary: 160 50% 30%; /* Mountain green from the image */
+    --primary-foreground: 210 15% 98%;
+
+    --secondary: 210 25% 20%; /* Dark blue-gray */
+    --secondary-foreground: 210 15% 98%;
+
+    --muted: 210 30% 15%;
+    --muted-foreground: 210 10% 70%;
+
+    --accent: 160 30% 25%; /* Darker green accent */
+    --accent-foreground: 210 15% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 15% 98%;
+
+    --border: 210 30% 18%;
+    --input: 210 30% 18%;
+    --ring: 160 50% 30%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 210 30% 6%;
+    --sidebar-foreground: 210 15% 85%;
+    --sidebar-primary: 160 50% 30%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 30% 15%;
+    --sidebar-accent-foreground: 210 15% 85%;
+    --sidebar-border: 210 30% 18%;
+    --sidebar-ring: 160 50% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23405060' fill-opacity='0.15' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold text-foreground;
+  }
+
+  /* Texture overlay */
+  .bg-noise {
+    position: relative;
+  }
+  
+  .bg-noise::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+    z-index: -1;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-2 px-4 rounded transition duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold py-2 px-4 rounded transition duration-200;
+  }
+  
+  .btn-outline {
+    @apply border border-primary/60 text-foreground hover:bg-primary/10 font-semibold py-2 px-4 rounded transition duration-200;
+  }
+
+  .solar-card {
+    @apply bg-card rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 border border-border/30;
+  }
+
+  .product-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+  }
+  
+  /* Card with subtle mountain/nature-inspired texture */
+  .natural-card {
+    @apply bg-card rounded-lg border border-border/20 shadow-lg overflow-hidden;
+    background-image: 
+      linear-gradient(to right, rgba(20, 30, 40, 0.8), rgba(15, 25, 35, 0.8)),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23304050' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23405060'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  /* Section with mountain-inspired gradient background */
+  .natural-section {
+    @apply relative overflow-hidden;
+    background: linear-gradient(to bottom, rgba(20, 30, 40, 1), rgba(25, 35, 45, 0.9));
+  }
+  
+  /* Green energy glow effect, more mountain-like */
+  .green-glow {
+    @apply relative;
+    box-shadow: 0 0 15px rgba(52, 164, 124, 0.3);
+  }
+  
+  /* Mountain-inspired section with faded gradient */
+  .mountain-section {
+    @apply relative overflow-hidden;
+    background: linear-gradient(to bottom, rgba(20, 30, 40, 0.95), rgba(25, 40, 50, 0.9));
+  }
+  
+  /* Hero section with mountain feel */
+  .mountain-hero {
+    @apply relative overflow-hidden;
+    background: linear-gradient(175deg, rgba(20, 30, 40, 0.9), rgba(40, 65, 75, 0.8));
+  }
+}
