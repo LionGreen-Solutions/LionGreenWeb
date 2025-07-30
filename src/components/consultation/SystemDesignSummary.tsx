@@ -39,7 +39,7 @@ const SystemDesignSummary: React.FC<SystemDesignSummaryProps> = ({
         return 'Under 25,000 ETB';
       case '25k-50k':
         return '25,000 - 50,000 ETB';
-      case '25k-50k':
+      case '50k-100k':
         return '50,000 - 100,000 ETB';
       case 'over-100k':
         return 'Over 100,000 ETB';
