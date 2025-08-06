@@ -55,16 +55,16 @@ export const mobilityProducts: MobilityProduct[] = [
     image: "Images/mobility/A0.webp",
     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
     features: [
-      "1500W high-power motor",
-      "All-terrain fat tires",
-      "Premium suspension system",
-      "LED headlight and display"
+      "2000W high-power motor",
+      // "All-terrain fat tires",
+      // "Premium suspension system",
+      // "LED headlight and display"
     ],
     specs: {
       weight: "325 Kg",
       dimensions: "2900 * 1000 * 1700 mm",
-      motor: "1500W",
-      battery: "60V 58Ah, with Solar-Powered Roof (Optional)",
+      motor: "2000W",
+      battery: "72V 60Ah, Lead Acid",
       tires: "400-12 Tires",
       //absorber: "Front suspension fork",
       maxSpeed: "50 Km/h",
@@ -76,9 +76,12 @@ export const mobilityProducts: MobilityProduct[] = [
       warranty: "One-year replacement for non-human damage"
     },
     batteryOptions: [
-      { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-      { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+      { type: "Lead Acid", capacity: "72V 60Ah", price: 360000 },
+      { type: "Lithium", capacity: "72V 60Ah", price: 400000 },
+      { type: "Lithium", capacity: "72V 100Ah", price: 470000 },
+      { type: "Lithium", capacity: "72V 140Ah", price: 498000 },
+      { type: "Lead Acid", capacity: "3000W", price: 385000 },
+      { type: "Lithium", capacity: "3000W", price: 426000 },
     ],
     stock: 15,
     bestSeller: true,
@@ -91,21 +94,21 @@ export const mobilityProducts: MobilityProduct[] = [
     id: 2,
     name: "A1",
     category: "electric-tricycles-passenger",
-    basePrice: 360000,
+    basePrice: 392000,
     rating: 4.8,
     image: "Images/mobility/A1.webp",
     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
     features: [
-      "1500W high-power motor",
-      "All-terrain fat tires",
-      "Premium suspension system",
-      "LED headlight and display"
+      "2000W high-power motor",
+      // "All-terrain fat tires",
+      // "Premium suspension system",
+      // "LED headlight and display"
     ],
     specs: {
       weight: "400 Kg",
       dimensions: "2677 * 1359 * 1740 mm",
-      motor: "2200W",
-      battery: "72V 200Ah Lithium",
+      motor: "2000W",
+      battery: "72V 60Ah Lead Acid",
       tires: "400-12 Tires",
       //absorber: "Front suspension fork",
       maxSpeed: "50 Km/h",
@@ -117,9 +120,10 @@ export const mobilityProducts: MobilityProduct[] = [
       warranty: "One-year replacement for non-human damage"
     },
     batteryOptions: [
-      { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-      { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+      { type: "Lead Acid", capacity: "72V 60Ah", price: 392000 },
+      { type: "Lithium", capacity: "72V 60Ah", price: 433000 },
+      { type: "Lithium", capacity: "72V 100Ah", price: 502000 },
+      { type: "Lithium", capacity: "72V 140Ah", price: 530000 }
     ],
     stock: 15,
     bestSeller: true,
@@ -132,15 +136,15 @@ export const mobilityProducts: MobilityProduct[] = [
     id: 3,
     name: "B001",
     category: "electric-bikes",
-    basePrice: 360000,
+    basePrice: 80000,
     rating: 4.8,
     image: "Images/mobility/B001.webp",
     description: "High-performance electric bike with robust design and premium components.",
     features: [
       "350W high-power motor",
-      "All-terrain fat tires",
-      "Premium suspension system",
-      "LED headlight and display"
+      // "All-terrain fat tires",
+      // "Premium suspension system",
+      // "LED headlight and display"
     ],
     specs: {
       weight: "43 Kg",
@@ -158,9 +162,9 @@ export const mobilityProducts: MobilityProduct[] = [
       warranty: "One-year replacement for non-human damage"
     },
     batteryOptions: [
-      { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-      { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+      { type: "Lead Acid", capacity: "48V 12Ah", price: 80000 },
+      // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+      // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
     ],
     stock: 15,
     bestSeller: true,
@@ -173,15 +177,15 @@ export const mobilityProducts: MobilityProduct[] = [
    id: 4,
    name: "B002",
    category: "electric-bikes",
-   basePrice: 360000,
+   basePrice: 80000,
    rating: 4.8,
    image: "Images/mobility/B002.webp",
    description: "High-performance electric bike with robust design and premium components.",
    features: [
      "450W high-power motor",
-     "All-terrain fat tires",
-     "Premium suspension system",
-     "LED headlight and display"
+    //  "All-terrain fat tires",
+    //  "Premium suspension system",
+    //  "LED headlight and display"
    ],
    specs: {
      weight: "65 Kg",
@@ -199,9 +203,9 @@ export const mobilityProducts: MobilityProduct[] = [
      warranty: "One-year replacement for non-human damage"
    },
    batteryOptions: [
-     { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-     { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-     { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+     { type: "Lithium", capacity: "72V 60Ah", price: 80000 },
+    //  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+    //  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
    ],
    stock: 15,
    bestSeller: true,
@@ -214,15 +218,15 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 5,
   name: "B004",
   category: "electric-bikes",
-  basePrice: 360000,
+  basePrice: 80000,
   rating: 4.8,
   image: "Images/mobility/B004.webp",
   description: "High-performance electric bike with robust design and premium components.",
   features: [
     "500W high-power motor",
-    "All-terrain fat tires",
-    "Premium suspension system",
-    "LED headlight and display"
+    // "All-terrain fat tires",
+    // "Premium suspension system",
+    // "LED headlight and display"
   ],
   specs: {
     weight: "74.5 Kg",
@@ -240,9 +244,9 @@ export const mobilityProducts: MobilityProduct[] = [
     warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-    { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-    { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-    { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+    { type: "Lithium", capacity: "72V 60Ah", price: 80000 },
+    // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+    // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -255,15 +259,15 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 6,
   name: "XB001",
   category: "electric-bikes",
-  basePrice: 360000,
+  basePrice: 170000,
   rating: 4.8,
   image: "Images/mobility/XB001.webp",
   description: "High-performance electric bike with robust design and premium components.",
   features: [
   "800W high-power motor",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
+  // "All-terrain fat tires",
+  // "Premium suspension system",
+  // "LED headlight and display"
   ],
   specs: {
   weight: "50 Kg",
@@ -281,9 +285,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lithium", capacity: "48V 16Ah", price: 393000 },
+  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -302,9 +306,9 @@ export const mobilityProducts: MobilityProduct[] = [
   description: "Robust electric tricycle designed for cargo transport and heavy-duty applications.",
   features: [
   "1200W high-power motor",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
+  // "All-terrain fat tires",
+  // "Premium suspension system",
+  // "LED headlight and display"
   ],
   specs: {
   weight: "285 Kg",
@@ -322,9 +326,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lead Acid", capacity: "60V 58Ah", price: 360000 },
+  { type: "Lithium", capacity: "60V 58Ah", price: 472500 },
+  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -343,9 +347,9 @@ export const mobilityProducts: MobilityProduct[] = [
   description: "Robust electric tricycle designed for cargo transport and heavy-duty applications.",
   features: [
   "1200W high-power motor",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
+  // "All-terrain fat tires",
+  // "Premium suspension system",
+  // "LED headlight and display"
   ],
   specs: {
   weight: "1500 Kg",
@@ -363,9 +367,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000},
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lithium", capacity: "60V 58Ah", price: 360000},
+  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -383,16 +387,16 @@ export const mobilityProducts: MobilityProduct[] = [
   image: "Images/mobility/C2.webp",
   description: "Robust electric tricycle designed for cargo transport and heavy-duty applications.",
   features: [
-  "1200W high-power motor",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
+  "2000W high-power motor",
+  // "All-terrain fat tires",
+  // "Premium suspension system",
+  // "LED headlight and display"
   ],
   specs: {
   weight: "1500 Kg",
   dimensions: "3250 * 1100 * 1000 mm",
-  motor: "1200W",
-  battery: "60V 58Ah",
+  motor: "2000W",
+  battery: "72V 60Ah",
   //tires: "2.50-14 Tires",
   //absorber: "Front suspension fork",
   maxSpeed: "40 Km/h",
@@ -404,9 +408,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lead Acid", capacity: "72V 60Ah", price: 360000 },
+  { type: "Lithium", capacity: "72V 100Ah", price: 472500 },
+  { type: "Lithium", capacity: "72V 140Ah", price: 530000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -424,15 +428,15 @@ export const mobilityProducts: MobilityProduct[] = [
   image: "Images/mobility/C3.webp",
   description: "Robust electric tricycle designed for cargo transport and heavy-duty applications.",
   features: [
-  "1200W high-power motor",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
+  "2000W high-power motor",
+  // "All-terrain fat tires",
+  // "Premium suspension system",
+  // "LED headlight and display"
   ],
   specs: {
   weight: "276 Kg",
   dimensions: "	3150 * 1180 * 1350 mm",
-  motor: "1200W",
+  motor: "2000W",
   battery: "60V 58Ah",
   tires: "400-12Tires",
   //absorber: "Front suspension fork",
@@ -445,9 +449,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lead Acid", capacity: "72V 60Ah", price: 360000 },
+  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -460,15 +464,15 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 11,
   name: "M009",
   category: "electric-motorcycles",
-  basePrice: 155000,
+  basePrice: 125000,
   rating: 4.8,
   image: "Images/mobility/M009.webp",
   description: "High-performance electric Motorcycle with robust design and premium components.",
   features: [
   "1200W high-power motor",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
+  // "All-terrain fat tires",
+  // "Premium suspension system",
+  // "LED headlight and display"
   ],
   specs: {
   weight: "95.5 Kg",
@@ -486,9 +490,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lead Acid", capacity: "72V 20Ah", price: 125000 },
+  { type: "Lithium", capacity: "60V 30Ah", price: 140000 },
+  { type: "Lithium", capacity: "60V 30Ah", price: 170000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -501,21 +505,21 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 12,
   name: "M3000",
   category: "electric-motorcycles",
-  basePrice: 320000,
+  basePrice: 310000,
   rating: 4.8,
   image: "Images/mobility/M3000.webp",
   description: "High-performance electric Motorcycle with robust design and premium components.",
   features: [
   "3000W high-power motor",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
+  // "All-terrain fat tires",
+  // "Premium suspension system",
+  // "LED headlight and display"
   ],
   specs: {
   weight: "105.5 Kg",
   dimensions: "1950 * 750 * 1100 mm",
   motor: "3000W",
-  battery: "72V 20Ah",
+  battery: "72V 50Ah",
   tires: "Front 80/100-19 Rear 110/90-16 Tires",
   //absorber: "Front suspension fork",
   maxSpeed: "100 Km/h",
@@ -527,9 +531,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lithium", capacity: "72V 50Ah", price: 310000 },
+  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -542,15 +546,15 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 13,
   name: "M005",
   category: "electric-motorcycles",
-  basePrice: 200000,
+  basePrice: 190000,
   rating: 4.8,
   image: "Images/mobility/M005.webp",
   description: "High-performance electric Motorcycle with robust design and premium components.",
   features: [
   "2000W high-power motor",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
+  // "All-terrain fat tires",
+  // "Premium suspension system",
+  // "LED headlight and display"
   ],
   specs: {
   weight: "108.5 Kg",
@@ -568,9 +572,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lead Acid", capacity: "72V 20Ah", price: 190000 },
+  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -583,21 +587,21 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 14,
   name: "M006",
   category: "electric-motorcycles",
-  basePrice: 290000,
+  basePrice: 280000,
   rating: 4.8,
   image: "Images/mobility/M006.webp",
   description: "High-performance electric Motorcycle with robust design and premium components.",
   features: [
   "3000W high-power motor",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
+  // "All-terrain fat tires",
+  // "Premium suspension system",
+  // "LED headlight and display"
   ],
   specs: {
   weight: "140 Kg",
   dimensions: "1950 * 570 * 840 mm",
   motor: "3000W",
-  battery: "72V 20Ah/35Ah",
+  battery: "72V 32Ah",
   //tires: "Front 80/100-19 Rear 110/90-16 Tires",
   //absorber: "Front suspension fork",
   maxSpeed: "90 Km/h",
@@ -609,9 +613,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lead Acid", capacity: "72V 32Ah", price: 280000 },
+  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -624,15 +628,15 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 15,
   name: "M008",
   category: "electric-motorcycles",
-  basePrice: 290000,
+  basePrice: 125000,
   rating: 4.8,
   image: "Images/mobility/M008.webp",
   description: "High-performance electric Motorcycle with robust design and premium components.",
   features: [
   "1000W high-power motor",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
+  // "All-terrain fat tires",
+  // "Premium suspension system",
+  // "LED headlight and display"
   ],
   specs: {
   weight: "70 Kg",
@@ -650,9 +654,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lead Acid", capacity: "72V 60Ah", price: 125000 },
+  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -665,21 +669,21 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 16,
   name: "NM02",
   category: "electric-motorcycles",
-  basePrice: 180000,
+  basePrice: 170000,
   rating: 4.8,
   image: "Images/mobility/NM02.webp",
   description: "High-performance electric Motorcycle with robust design and premium components.",
   features: [
   "1200W high-power motor",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
+  // "All-terrain fat tires",
+  // "Premium suspension system",
+  // "LED headlight and display"
   ],
   specs: {
   weight: "80 Kg",
   dimensions: "2000 * 830 * 1100 mm",
   motor: "1200W",
-  battery: "72V 32Ah",
+  battery: "62V 58Ah",
   tires: "2.75-10 Tires",
   //absorber: "Front suspension fork",
   maxSpeed: "45 Km/h",
@@ -691,9 +695,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000},
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lead Acid", capacity: "62V 58Ah", price: 170000},
+  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -706,21 +710,21 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 17,
   name: "NM03",
   category: "electric-motorcycles",
-  basePrice: 210000,
+  basePrice: 200000,
   rating: 4.8,
   image: "Images/mobility/NM03.webp",
   description: "High-performance electric Motorcycle with robust design and premium components.",
   features: [
-  "580W Differential motor",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
+  "1200W Differential motor",
+  // "All-terrain fat tires",
+  // "Premium suspension system",
+  // "LED headlight and display"
   ],
   specs: {
   weight: "80 Kg",
   dimensions: "2000 * 900 * 1100 mm",
-  motor: "580W Differential motor",
-  battery: "72V 32Ah",
+  motor: "1200W",
+  battery: "62V 58Ah",
   tires: "2.75-10 Tires",
   //absorber: "Front suspension fork",
   maxSpeed: "45 Km/h",
@@ -732,9 +736,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lithium", capacity: "62V 58Ah", price: 200000 },
+  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -829,15 +833,15 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 20,
   name: "S003",
   category: "electric-scooters",
-  basePrice: 90000,
+  basePrice: 80000,
   rating: 4.8,
   image: "Images/mobility/S003.webp",
   description: "High-performance electric scooters with robust design and premium components.",
   features: [
   "250W",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
+  // "All-terrain fat tires",
+  // "Premium suspension system",
+  // "LED headlight and display"
   ],
   specs: {
   weight: "11 Kg",
@@ -855,9 +859,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lithium", capacity: "72V 60Ah", price: 90000 },
+  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -870,15 +874,15 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 21,
   name: "S004",
   category: "electric-scooters",
-  basePrice: 150000,
+  basePrice: 140000,
   rating: 4.8,
   image: "Images/mobility/S004.webp",
   description: "High-performance electric scooters with robust design and premium components.",
   features: [
   "350W",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
+  // "All-terrain fat tires",
+  // "Premium suspension system",
+  // "LED headlight and display"
   ],
   specs: {
   weight: "10 Kg",
@@ -896,9 +900,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lithium", capacity: "72V 60Ah", price: 140000 },
+  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
   ],
   stock: 15,
   bestSeller: true,
