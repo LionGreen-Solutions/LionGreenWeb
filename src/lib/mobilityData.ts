@@ -160,8 +160,8 @@ export const mobilityProducts: MobilityProduct[] = [
       warranty: "One-year replacement for non-human damage"
     },
     batteryOptions: [
-      { type: "Lead Acid", capacity: "72V 60Ah", price: 385000 },
-      { type: "Lithium", capacity: "72V 60Ah", price: 426000 },
+      { type: "Lead Acid", capacity: "72V 60Ah", price: 392000 },
+      { type: "Lithium", capacity: "72V 60Ah", price: 432000 },
       { type: "Lithium", capacity: "72V 100Ah", price: 502000 },
       { type: "Lithium", capacity: "72V 140Ah", price: 530000 }
     ],
@@ -176,7 +176,7 @@ export const mobilityProducts: MobilityProduct[] = [
     id: 22,
     name: "A1(3000W)",
     category: "electric-tricycles-passenger",
-    basePrice: 392000,
+    basePrice: 417000,
     rating: 4.8,
     image: "Images/mobility/A1.webp",
     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
