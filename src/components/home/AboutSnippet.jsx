@@ -10,7 +10,7 @@ export default function AboutSnippet() {
           <img
             src="/Images/About/Lion Green logo.jpg"
             alt="Lion Green Solutions"
-            className="w-40 h-40 rounded-lg shadow-lg border-2 border-white/40"
+            className="w-20 h-20 rounded-lg shadow-lg border-2 border-white/40"
           />
         </div>
 
