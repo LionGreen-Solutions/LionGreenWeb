@@ -9,7 +9,8 @@ import BenefitsSection from "@/components/home/BenefitsSection";
 import QuickLinksSection from "@/components/home/QuickLinksSection";
 import PartnersSection from "@/components/home/PartnersSection";
 import NewsletterSection from "@/components/home/NewsletterSection";
-
+import OngoingProjectsSection from "@/components/home/OngoingProjectsSection";
+import AboutSnippet from "@/components/home/AboutSnippet";
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
@@ -24,7 +25,11 @@ const Index = () => {
         <ServiceBanner />
       </div>
 
+      <AboutSnippet />
+      
       <CategoryShowcase />
+
+      <OngoingProjectsSection />
 
       <BenefitsSection />
 
