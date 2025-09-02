@@ -5,17 +5,17 @@ import { Dialog } from "@headlessui/react";
 const projects = [
   {
     id: 1,
-    name: "Solar Mini-Grid in Rural Ethiopia",
+    name: "Step G @ AASTU",
     image: "/Images/Projects/solar-minigrid.jpg",
     description:
-      "We are building a sustainable solar mini-grid to power rural communities with affordable, reliable, and clean energy.",
+      "We are building a Bike stations at university.",
   },
   {
     id: 2,
-    name: "Electric Bajaj Fleet Deployment",
+    name: "Step G Electric Bajaj Fleet Deployment",
     image: "/Images/Projects/electric-bajaj.jpg",
     description:
-      "Introducing a fleet of electric bajajs to reduce emissions and provide affordable urban transport solutions in Addis Ababa.",
+      "Introducing a fleet of electric bajajs to reduce emissions.",
   },
 ];
 
