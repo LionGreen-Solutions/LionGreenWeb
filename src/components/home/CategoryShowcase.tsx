@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { categories } from "@/lib/data";
 
@@ -23,16 +22,16 @@ const CategoryShowcase = () => {
     // },
     // 'cables-connectors': {
     //   name: 'Cables & Connectors',
-    //   image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    //   image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.0&auto=format&fit=crop&w=800&q=80'
     // },
-    'solar-generators': {
-      name: 'EcoFlow Power Stations',
-      image: '/lovable-uploads/82799ce0-3e35-4a65-b09b-7f9df83a5c31.png'
+    "solar-generators": {
+      name: "EcoFlow Power Stations",
+      image: "/lovable-uploads/82799ce0-3e35-4a65-b09b-7f9df83a5c31.png",
     },
-    'solar-chargers': {
-      name: 'Electric Mobility',
-      image: 'Images/slides/Mobility 1.webp'
-    }
+    "solar-chargers": {
+      name: "Electric Mobility",
+      image: "Images/slides/Mobility 1.webp",
+    },
   };
 
   // Create display categories array including our custom ones
@@ -41,27 +40,40 @@ const CategoryShowcase = () => {
     // { id: 'inverters', name: 'Inverters', slug: 'inverters' },
     // { id: 'batteries', name: 'Batteries', slug: 'batteries' },
     // { id: 'controllers', name: 'Controllers', slug: 'controllers' },
-    //{ id: 'cables-connectors', name: 'Cables & Connectors', slug: 'cables-connectors' },
-    { id: 'solar-generators', name: 'EcoFlow Power Stations', slug: 'solar-generators' },
-    { id: 'solar-chargers', name: 'Electric Mobility', slug: 'solar-chargers' }
+    // { id: 'cables-connectors', name: 'Cables & Connectors', slug: 'cables-connectors' },
+    { id: "solar-generators", name: "EcoFlow Power Stations", slug: "solar-generators" },
+    { id: "solar-chargers", name: "Electric Mobility", slug: "solar-chargers" },
   ];
+
+  // Map slugs to routes
+  const slugToRoute = {
+    "solar-generators": "/power-stations",
+    "solar-chargers": "/mobility",
+  };
 
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-green-600 mb-12">Shop by Category</h2>
-        
+        <h2 className="text-3xl font-bold text-center text-green-600 mb-12">
+          Shop by Category
+        </h2>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {displayCategories.map(category => {
+          {displayCategories.map((category) => {
             const editableCategory = editableCategories[category.slug];
+            const linkTo = slugToRoute[category.slug] || `/${category.slug}`;
+
             return (
-              <Link key={category.id} to={`/mobility`} className="group">
+              <Link key={category.id} to={linkTo} className="group">
                 <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 relative h-48">
                   <div className="absolute inset-0">
-                    <img 
-                      src={editableCategory?.image || editableCategories['batteries'].image} 
-                      alt={editableCategory?.name || category.name} 
-                      className="w-full h-full object-contain bg-white p-4" 
+                    <img
+                      src={
+                        editableCategory?.image ||
+                        editableCategories["batteries"]?.image
+                      }
+                      alt={editableCategory?.name || category.name}
+                      className="w-full h-full object-contain bg-white p-4"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-10 group-hover:bg-opacity-5 transition-all duration-300"></div>
                   </div>
