@@ -10,8 +10,13 @@ const About = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">About Lion Green Solutions</h1>
           <p className="text-xl max-w-3xl mx-auto leading-relaxed">
-            Leading the renewable energy revolution in Ethiopia with innovative solar solutions, 
-            electric mobility, and sustainable power systems that transform communities and protect our environment.
+            Lion Green Solutions Ethiopia PLC is a clean mobility company focused on electric 
+            passenger tricycles, the most affordable and widely used transport mode in Ethiopian 
+            cities and towns. We combine fleet rentals, vehicle sales, solar‑powered battery 
+            swapping stations, and a ride‑hailing app to deliver fast, reliable, and eco‑friendly 
+            transport. Our model makes EV ownership possible for more drivers through inclusive 
+            financing and creates a scalable network that will grow with Ethiopia’s urban transport 
+            needs.
           </p>
         </div>
       </section>
@@ -23,16 +28,14 @@ const About = () => {
             <div>
               <h2 className="text-2xl font-bold text-green-600 mb-4">Our Mission</h2>
               <p className="text-gray-600 mb-6">
-                Lion Green Solutions is committed to transforming Ethiopia's energy landscape 
-                through sustainable and affordable renewable energy solutions. We believe that 
-                access to clean energy is a fundamental right, and our mission is to make it 
-                available to all Ethiopians.
+                To make urban transport in Ethiopia cleaner, cheaper, and more reliable by replacing 
+                fuel‑powered tricycles with electric passenger tricycles powered by renewable energy.
               </p>
+              <h2 className="text-2xl font-bold text-green-600 mb-4">Our Vision</h2>
               <p className="text-gray-600">
-                Founded in 2020, our company has quickly established itself as a leader in 
-                providing solar energy systems, electric mobility solutions, and energy 
-                consulting services that help reduce carbon footprints while meeting the 
-                energy needs of our clients.
+                A future where every short‑distance trip in Ethiopian cities is powered by zero‑emission 
+                vehicles, supported by a nationwide network of solar‑powered battery swapping stations 
+                and digital ride‑hailing services.
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg border shadow-lg">

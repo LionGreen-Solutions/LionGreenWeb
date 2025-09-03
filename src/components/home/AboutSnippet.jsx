@@ -9,9 +9,13 @@ export default function AboutSnippet() {
             About Lion Green Solutions
           </h2>
           <p className="text-base md:text-lg mb-6 leading-relaxed">
-            Leading Ethiopia’s renewable energy revolution with innovative solar,
-            electric mobility, and sustainable power solutions that transform
-            communities and protect our environment.
+            Lion Green Solutions Ethiopia PLC is a clean mobility company focused on electric 
+            passenger tricycles, the most affordable and widely used transport mode in Ethiopian 
+            cities and towns. We combine fleet rentals, vehicle sales, solar‑powered battery 
+            swapping stations, and a ride‑hailing app to deliver fast, reliable, and eco‑friendly 
+            transport. Our model makes EV ownership possible for more drivers through inclusive 
+            financing and creates a scalable network that will grow with Ethiopia’s urban transport 
+            needs.
           </p>
           <Link
             to="/about"
