@@ -3,20 +3,20 @@ import Link from "next/link";
 export default function AboutSnippet() {
   return (
     <section className="py-16 bg-gradient-to-r from-green-700 to-green-500 text-white">
-      <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
+      <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-10">
         
         {/* Logo */}
         <div className="flex-shrink-0">
           <img
             src="/Images/About/Lion Green logo.jpg"
             alt="Lion Green Solutions"
-            className="w-24 h-24 md:w-32 md:h-32 max-w-[130px] max-h-[130px] rounded-lg shadow-lg border-2 border-white/40 object-contain"
+            className="w-32 h-32 md:w-44 md:h-44 object-contain rounded-lg shadow-lg border-2 border-white/40"
           />
         </div>
 
         {/* Text */}
-        <div className="flex-1 text-center md:text-left max-w-xl">
-          <h2 className="text-2xl md:text-4xl font-bold mb-4 leading-snug">
+        <div className="flex-1 text-center md:text-left max-w-2xl">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
             About Lion Green Solutions
           </h2>
           <p className="text-base md:text-lg mb-6 leading-relaxed">
