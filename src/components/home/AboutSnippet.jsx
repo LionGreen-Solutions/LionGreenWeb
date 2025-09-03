@@ -18,7 +18,7 @@ export default function AboutSnippet() {
           
           {/* Correct Next.js Link */}
           <Link 
-            href="/about" 
+            href="/About" 
             className="inline-block px-6 py-3 bg-white text-green-700 font-semibold rounded-lg shadow hover:bg-slate-100 transition"
           >
             Learn More
