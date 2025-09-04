@@ -5,17 +5,17 @@ import { Dialog } from "@headlessui/react";
 const projects = [
   {
     id: 1,
-    name: "Step G @ AASTU",
-    image: "/Images/Projects/solar-minigrid.jpg",
+    name: "StepG - Campus",
+    image: "/Images/Projects/Station.png",
     description:
-      "We are building a Bike stations at university.",
+      "The Solar-Powered Smart Energy Hub and Electric Bike-Sharing System at AASTU integrates clean solar generation, intelligent mobility, and modular digital services into one platform. It transforms campus spaces into active sustainability hubs, offering zero-emission rides, reliable energy, student services, and a living lab for research and innovation.",
   },
   {
     id: 2,
-    name: "Step G Electric Bajaj Fleet Deployment",
-    image: "/Images/Projects/electric-bajaj.jpg",
+    name: "StepG EB Ride",
+    image: "/Images/Projects/A1L.jpg",
     description:
-      "Introducing a fleet of electric bajajs to reduce emissions.",
+      "Expanding beyond the university, StepG EB Ride introduces a fleet of electric bajajs powered by solar charging and battery-swap stations. This project aims to create a clean, affordable, and scalable ride system for cities, reducing emissions while modernizing urban transport infrastructure",
   },
 ];
 
