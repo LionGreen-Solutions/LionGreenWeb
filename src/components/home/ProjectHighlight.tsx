@@ -7,7 +7,7 @@ const ProjectHighlight = () => {
         {/* Left: Image */}
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/lion-green-project.png" // <-- replace with your actual image path
+            src="/Images/lion-green-project.png" 
             alt="Lion Green Solutions Project"
             width={600}
             height={400}
@@ -56,7 +56,7 @@ const ProjectHighlight = () => {
 
           {/* PDF Link */}
           <a
-            href="/pdfs/LionGreen_ProjectDetails.pdf" // <-- your uploaded PDF path
+            href="/pdfs/LionGreen_ProjectDetails.pdf" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-700 transition"
