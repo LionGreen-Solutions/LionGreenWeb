@@ -7,7 +7,7 @@ const ProjectHighlight = () => {
         {/* Left: Image */}
         <div className="w-full md:w-1/2">
           <Image
-            src="/Images/lion-green-project.png" 
+            src="/Images/Projects/lion-green-project.jpg" 
             alt="Lion Green Solutions Project"
             width={600}
             height={400}
