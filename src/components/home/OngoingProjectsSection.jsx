@@ -12,10 +12,10 @@ const projects = [
   },
   {
     id: 2,
-    name: "StepG EB Ride",
+    name: "StepG Tuk Tuk",
     image: "/Images/Projects/A1L.jpg",
     description:
-      "Expanding beyond the university, StepG EB Ride introduces a fleet of electric bajajs powered by solar charging and battery-swap stations. This project aims to create a clean, affordable, and scalable ride system for cities, reducing emissions while modernizing urban transport infrastructure",
+      "Expanding beyond the university, StepG Tuk Tuk introduces a fleet of electric tuk-tuk powered by solar charging and battery-swap stations. This project aims to create a clean, affordable, and scalable ride system for cities, reducing emissions while modernizing urban transport infrastructure",
   },
 ];
 
