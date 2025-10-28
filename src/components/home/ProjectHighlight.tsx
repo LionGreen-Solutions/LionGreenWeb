@@ -7,7 +7,7 @@ const ProjectHighlight = () => {
         {/* Left: Image */}
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/lion-green-project.jpg" // <-- replace with your actual image path
+            src="/images/lion-green-project.png" // <-- replace with your actual image path
             alt="Lion Green Solutions Project"
             width={600}
             height={400}
