@@ -6,7 +6,7 @@ const ProjectHighlight = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
         {/* Left: Image */}
         <div className="w-full md:w-1/2">
-          <Image
+          <img
             src="/Images/Projects/lion-green-project.jpg" 
             alt="Lion Green Solutions Project"
             width={600}
