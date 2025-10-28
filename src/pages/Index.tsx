@@ -11,6 +11,8 @@ import PartnersSection from "@/components/home/PartnersSection";
 import NewsletterSection from "@/components/home/NewsletterSection";
 import OngoingProjectsSection from "@/components/home/OngoingProjectsSection";
 import AboutSnippet from "@/components/home/AboutSnippet";
+import ProjectHighlight from "@/components/home/ProjectHighlight";
+
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
@@ -28,6 +30,8 @@ const Index = () => {
       <AboutSnippet />
       
       <CategoryShowcase />
+
+      <ProjectHighlight />
 
       <OngoingProjectsSection />
 
