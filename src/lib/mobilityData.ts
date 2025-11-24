@@ -264,7 +264,7 @@ export const mobilityProducts: MobilityProduct[] = [
     category: "electric-tricycles-passenger",
     basePrice: 520000,
     rating: 4.8,
-    image: "Images/mobility/A1L.png",
+    image: "Images/mobility/A1L.jpg",
     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
     features: [
       "2000W high-power motor",
@@ -307,7 +307,7 @@ export const mobilityProducts: MobilityProduct[] = [
     category: "electric-tricycles-passenger",
     basePrice: 590000,
     rating: 4.8,
-    image: "Images/mobility/A1L.png",
+    image: "Images/mobility/A1L.jpg",
     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
     features: [
       "2000W high-power motor",
@@ -350,7 +350,7 @@ export const mobilityProducts: MobilityProduct[] = [
     category: "electric-tricycles-passenger",
     basePrice: 650000,
     rating: 4.8,
-    image: "Images/mobility/A1L.png",
+    image: "Images/mobility/A1L.jpg",
     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
     features: [
       "2000W high-power motor",
