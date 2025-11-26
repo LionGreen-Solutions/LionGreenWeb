@@ -50,7 +50,7 @@ export const mobilityProducts: MobilityProduct[] = [
     id: 1,
     name: "A0(2000W)",
     category: "electric-tricycles-passenger",
-    basePrice: 360000,
+    basePrice: 475000,
     rating: 4.8,
     image: "Images/mobility/A0.webp",
     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
@@ -76,10 +76,10 @@ export const mobilityProducts: MobilityProduct[] = [
       warranty: "One-year replacement for non-human damage"
     },
     batteryOptions: [
-      { type: "Lead Acid", capacity: "72V 60Ah", price: 360000 },
-      { type: "Lithium", capacity: "72V 60Ah", price: 400000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 470000 },
-      { type: "Lithium", capacity: "72V 140Ah", price: 498000 },
+      { type: "Lead Acid", capacity: "72V 60Ah", price: 475000 },
+      // { type: "Lithium", capacity: "72V 60Ah", price: 400000 },
+      // { type: "Lithium", capacity: "72V 100Ah", price: 470000 },
+      // { type: "Lithium", capacity: "72V 140Ah", price: 498000 },
     ],
     stock: 15,
     bestSeller: true,
@@ -88,95 +88,95 @@ export const mobilityProducts: MobilityProduct[] = [
     chargingTime: 7
   },
 
- {
-    id: 23,
-    name: "A0(3000W)",
-    category: "electric-tricycles-passenger",
-    basePrice: 385000,
-    rating: 4.8,
-    image: "Images/mobility/A0.webp",
-    description: "Spacious electric tricycle designed for passenger transport and commercial use.",
-    features: [
-      "2000W high-power motor",
-      // "All-terrain fat tires",
-      // "Premium suspension system",
-      // "LED headlight and display"
-    ],
-    specs: {
-      weight: "325 Kg",
-      dimensions: "2900 * 1000 * 1700 mm",
-      motor: "2000W",
-      battery: "72V 60Ah, Lead Acid",
-      tires: "400-12 Tires",
-      //absorber: "Front suspension fork",
-      maxSpeed: "50 Km/h",
-      loadCapacity: "1000 Kg, 4 Passengers+1 Driver",
-      chargingTime: "6-8 hours",
-      optionalColors: ["Blue", "Yellow", "Red", "Navy", "Grey"],
-      packagingSize: "2500 x 1100 x 850 mm",
-      //containerQty: "45 units",
-      warranty: "One-year replacement for non-human damage"
-    },
-    batteryOptions: [
-      { type: "Lead Acid", capacity: "72V 60Ah", price: 385000 },
-      { type: "Lithium", capacity: "72V 60Ah", price: 426000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 496000 },
-      { type: "Lithium", capacity: "72V 140Ah", price: 523000 },
-    ],
-    stock: 15,
-    bestSeller: true,
-    range: 50,
-    maxSpeed: 50,
-    chargingTime: 7
-  }, 
+//  {
+//     id: 23,
+//     name: "A0(3000W)",
+//     category: "electric-tricycles-passenger",
+//     basePrice: 385000,
+//     rating: 4.8,
+//     image: "Images/mobility/A0.webp",
+//     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
+//     features: [
+//       "2000W high-power motor",
+//       // "All-terrain fat tires",
+//       // "Premium suspension system",
+//       // "LED headlight and display"
+//     ],
+//     specs: {
+//       weight: "325 Kg",
+//       dimensions: "2900 * 1000 * 1700 mm",
+//       motor: "2000W",
+//       battery: "72V 60Ah, Lead Acid",
+//       tires: "400-12 Tires",
+//       //absorber: "Front suspension fork",
+//       maxSpeed: "50 Km/h",
+//       loadCapacity: "1000 Kg, 4 Passengers+1 Driver",
+//       chargingTime: "6-8 hours",
+//       optionalColors: ["Blue", "Yellow", "Red", "Navy", "Grey"],
+//       packagingSize: "2500 x 1100 x 850 mm",
+//       //containerQty: "45 units",
+//       warranty: "One-year replacement for non-human damage"
+//     },
+//     batteryOptions: [
+//       { type: "Lead Acid", capacity: "72V 60Ah", price: 385000 },
+//       { type: "Lithium", capacity: "72V 60Ah", price: 426000 },
+//       { type: "Lithium", capacity: "72V 100Ah", price: 496000 },
+//       { type: "Lithium", capacity: "72V 140Ah", price: 523000 },
+//     ],
+//     stock: 15,
+//     bestSeller: true,
+//     range: 50,
+//     maxSpeed: 50,
+//     chargingTime: 7
+//   }, 
 
-{
-    id: 2,
-    name: "A1(2000W)",
-    category: "electric-tricycles-passenger",
-    basePrice: 490000,
-    rating: 4.8,
-    image: "Images/mobility/A1.png",
-    description: "Spacious electric tricycle designed for passenger transport and commercial use.",
-    features: [
-      "2000W high-power motor",
-      // "All-terrain fat tires",
-      // "Premium suspension system",
-      // "LED headlight and display"
-    ],
-    specs: {
-      weight: "400 Kg",
-      dimensions: "2677 * 1359 * 1740 mm",
-      motor: "2000W",
-      battery: "72V 60Ah Lead Acid",
-      tires: "400-12 Tires",
-      //absorber: "Front suspension fork",
-      maxSpeed: "50 Km/h",
-      loadCapacity: "1000 Kg, 3 Passengers+1 Driver",
-      chargingTime: "6-8 hours",
-      optionalColors: ["Blue", "Red", "Navy", "Grey"],
-      packagingSize: "2200 x 1300 x 1500 mm",
-      //containerQty: "45 units",
-      warranty: "One-year replacement for non-human damage"
-    },
-    batteryOptions: [
-      { type: "Lead Acid", capacity: "72V 60Ah", price: 392000 },
-      { type: "Lithium", capacity: "72V 60Ah", price: 432000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 502000 },
-      { type: "Lithium", capacity: "72V 140Ah", price: 490000 }
-    ],
-    stock: 15,
-    bestSeller: true,
-    range: 205,
-    maxSpeed: 50,
-    chargingTime: 7
-  },
+// {
+//     id: 2,
+//     name: "A1(2000W)",
+//     category: "electric-tricycles-passenger",
+//     basePrice: 490000,
+//     rating: 4.8,
+//     image: "Images/mobility/A1.png",
+//     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
+//     features: [
+//       "2000W high-power motor",
+//       // "All-terrain fat tires",
+//       // "Premium suspension system",
+//       // "LED headlight and display"
+//     ],
+//     specs: {
+//       weight: "400 Kg",
+//       dimensions: "2677 * 1359 * 1740 mm",
+//       motor: "2000W",
+//       battery: "72V 60Ah Lead Acid",
+//       tires: "400-12 Tires",
+//       //absorber: "Front suspension fork",
+//       maxSpeed: "50 Km/h",
+//       loadCapacity: "1000 Kg, 3 Passengers+1 Driver",
+//       chargingTime: "6-8 hours",
+//       optionalColors: ["Blue", "Red", "Navy", "Grey"],
+//       packagingSize: "2200 x 1300 x 1500 mm",
+//       //containerQty: "45 units",
+//       warranty: "One-year replacement for non-human damage"
+//     },
+//     batteryOptions: [
+//       { type: "Lead Acid", capacity: "72V 60Ah", price: 392000 },
+//       { type: "Lithium", capacity: "72V 60Ah", price: 432000 },
+//       { type: "Lithium", capacity: "72V 100Ah", price: 502000 },
+//       { type: "Lithium", capacity: "72V 140Ah", price: 490000 }
+//     ],
+//     stock: 15,
+//     bestSeller: true,
+//     range: 205,
+//     maxSpeed: 50,
+//     chargingTime: 7
+//   },
 
 {
     id: 22,
     name: "A1(3000W)",
     category: "electric-tricycles-passenger",
-    basePrice: 530000,
+    basePrice: 480000,
     rating: 4.8,
     image: "Images/mobility/A1.png",
     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
@@ -202,10 +202,10 @@ export const mobilityProducts: MobilityProduct[] = [
       warranty: "One-year replacement for non-human damage"
     },
     batteryOptions: [
-      { type: "Lead Acid", capacity: "72V 60Ah", price: 417000 },
-      { type: "Lithium", capacity: "72V 60Ah", price: 459000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 528000 },
-      { type: "Lithium", capacity: "72V 140Ah", price: 530000 }
+      // { type: "Lead Acid", capacity: "72V 60Ah", price: 417000 },
+      // { type: "Lithium", capacity: "72V 60Ah", price: 459000 },
+      { type: "Lithium", capacity: "72V 100Ah", price: 480000 },
+      { type: "Lithium", capacity: "72V 150Ah", price: 510000 }
       
     ],
     stock: 15,
@@ -215,97 +215,97 @@ export const mobilityProducts: MobilityProduct[] = [
     chargingTime: 7
   },
 
-  {
-    id: 24,
-    name: "A1(4000W)",
-    category: "electric-tricycles-passenger",
-    basePrice: 590000,
-    rating: 4.8,
-    image: "Images/mobility/A1.png",
-    description: "Spacious electric tricycle designed for passenger transport and commercial use.",
-    features: [
-      "2000W high-power motor",
-      // "All-terrain fat tires",
-      // "Premium suspension system",
-      // "LED headlight and display"
-    ],
-    specs: {
-      weight: "400 Kg",
-      dimensions: "2677 * 1359 * 1740 mm",
-      motor: "2000W",
-      battery: "72V 60Ah Lead Acid",
-      tires: "400-12 Tires",
-      //absorber: "Front suspension fork",
-      maxSpeed: "50 Km/h",
-      loadCapacity: "1000 Kg, 3 Passengers+1 Driver",
-      chargingTime: "6-8 hours",
-      optionalColors: ["Blue", "Red", "Navy", "Grey"],
-      packagingSize: "2200 x 1300 x 1500 mm",
-      //containerQty: "45 units",
-      warranty: "One-year replacement for non-human damage"
-    },
-    batteryOptions: [
-      { type: "Lead Acid", capacity: "72V 60Ah", price: 517000 },
-      { type: "Lithium", capacity: "72V 60Ah", price: 559000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 628000 },
-      { type: "Lithium", capacity: "72V 140Ah", price: 590000 }
+  // {
+  //   id: 24,
+  //   name: "A1(4000W)",
+  //   category: "electric-tricycles-passenger",
+  //   basePrice: 590000,
+  //   rating: 4.8,
+  //   image: "Images/mobility/A1.png",
+  //   description: "Spacious electric tricycle designed for passenger transport and commercial use.",
+  //   features: [
+  //     "2000W high-power motor",
+  //     // "All-terrain fat tires",
+  //     // "Premium suspension system",
+  //     // "LED headlight and display"
+  //   ],
+  //   specs: {
+  //     weight: "400 Kg",
+  //     dimensions: "2677 * 1359 * 1740 mm",
+  //     motor: "2000W",
+  //     battery: "72V 60Ah Lead Acid",
+  //     tires: "400-12 Tires",
+  //     //absorber: "Front suspension fork",
+  //     maxSpeed: "50 Km/h",
+  //     loadCapacity: "1000 Kg, 3 Passengers+1 Driver",
+  //     chargingTime: "6-8 hours",
+  //     optionalColors: ["Blue", "Red", "Navy", "Grey"],
+  //     packagingSize: "2200 x 1300 x 1500 mm",
+  //     //containerQty: "45 units",
+  //     warranty: "One-year replacement for non-human damage"
+  //   },
+  //   batteryOptions: [
+  //     { type: "Lead Acid", capacity: "72V 60Ah", price: 517000 },
+  //     { type: "Lithium", capacity: "72V 60Ah", price: 559000 },
+  //     { type: "Lithium", capacity: "72V 100Ah", price: 628000 },
+  //     { type: "Lithium", capacity: "72V 140Ah", price: 590000 }
       
-    ],
-    stock: 15,
-    bestSeller: true,
-    range: 205,
-    maxSpeed: 50,
-    chargingTime: 7
-  },
+  //   ],
+  //   stock: 15,
+  //   bestSeller: true,
+  //   range: 205,
+  //   maxSpeed: 50,
+  //   chargingTime: 7
+  // },
 
-{
-    id: 25,
-    name: "A1L(2000W)",
-    category: "electric-tricycles-passenger",
-    basePrice: 520000,
-    rating: 4.8,
-    image: "Images/mobility/A1L.jpg",
-    description: "Spacious electric tricycle designed for passenger transport and commercial use.",
-    features: [
-      "2000W high-power motor",
-      // "All-terrain fat tires",
-      // "Premium suspension system",
-      // "LED headlight and display"
-    ],
-    specs: {
-      weight: "400 Kg",
-      dimensions: "2677 * 1359 * 1740 mm",
-      motor: "2000W",
-      battery: "72V 60Ah Lead Acid",
-      tires: "400-12 Tires",
-      //absorber: "Front suspension fork",
-      maxSpeed: "50 Km/h",
-      loadCapacity: "1000 Kg, 3 Passengers+1 Driver",
-      chargingTime: "6-8 hours",
-      optionalColors: ["Blue", "Red", "Navy", "Grey"],
-      packagingSize: "2200 x 1300 x 1500 mm",
-      //containerQty: "45 units",
-      warranty: "One-year replacement for non-human damage"
-    },
-    batteryOptions: [
-      { type: "Lead Acid", capacity: "72V 60Ah", price: 517000 },
-      { type: "Lithium", capacity: "72V 60Ah", price: 559000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 628000 },
-      { type: "Lithium", capacity: "72V 140Ah", price: 650000 }
+// {
+//     id: 25,
+//     name: "A1L(2000W)",
+//     category: "electric-tricycles-passenger",
+//     basePrice: 520000,
+//     rating: 4.8,
+//     image: "Images/mobility/A1L.jpg",
+//     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
+//     features: [
+//       "2000W high-power motor",
+//       // "All-terrain fat tires",
+//       // "Premium suspension system",
+//       // "LED headlight and display"
+//     ],
+//     specs: {
+//       weight: "400 Kg",
+//       dimensions: "2677 * 1359 * 1740 mm",
+//       motor: "2000W",
+//       battery: "72V 60Ah Lead Acid",
+//       tires: "400-12 Tires",
+//       //absorber: "Front suspension fork",
+//       maxSpeed: "50 Km/h",
+//       loadCapacity: "1000 Kg, 3 Passengers+1 Driver",
+//       chargingTime: "6-8 hours",
+//       optionalColors: ["Blue", "Red", "Navy", "Grey"],
+//       packagingSize: "2200 x 1300 x 1500 mm",
+//       //containerQty: "45 units",
+//       warranty: "One-year replacement for non-human damage"
+//     },
+//     batteryOptions: [
+//       { type: "Lead Acid", capacity: "72V 60Ah", price: 517000 },
+//       { type: "Lithium", capacity: "72V 60Ah", price: 559000 },
+//       { type: "Lithium", capacity: "72V 100Ah", price: 628000 },
+//       { type: "Lithium", capacity: "72V 140Ah", price: 650000 }
       
-    ],
-    stock: 15,
-    bestSeller: true,
-    range: 205,
-    maxSpeed: 50,
-    chargingTime: 7
-  },
+//     ],
+//     stock: 15,
+//     bestSeller: true,
+//     range: 205,
+//     maxSpeed: 50,
+//     chargingTime: 7
+//   },
 
 {
     id: 26,
     name: "A1L(3000W)",
     category: "electric-tricycles-passenger",
-    basePrice: 590000,
+    basePrice: 530000,
     rating: 4.8,
     image: "Images/mobility/A1L.jpg",
     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
@@ -331,10 +331,10 @@ export const mobilityProducts: MobilityProduct[] = [
       warranty: "One-year replacement for non-human damage"
     },
     batteryOptions: [
-      { type: "Lead Acid", capacity: "72V 60Ah", price: 517000 },
-      { type: "Lithium", capacity: "72V 60Ah", price: 559000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 628000 },
-      { type: "Lithium", capacity: "72V 140Ah", price: 590000 }
+      // { type: "Lead Acid", capacity: "72V 60Ah", price: 517000 },
+      // { type: "Lithium", capacity: "72V 60Ah", price: 559000 },
+      { type: "Lithium", capacity: "72V 100Ah", price: 530000 },
+      { type: "Lithium", capacity: "72V 150Ah", price: 560000 }
       
     ],
     stock: 15,
@@ -344,48 +344,48 @@ export const mobilityProducts: MobilityProduct[] = [
     chargingTime: 7
   },
 
-{
-    id: 27,
-    name: "A1L(4000W)",
-    category: "electric-tricycles-passenger",
-    basePrice: 650000,
-    rating: 4.8,
-    image: "Images/mobility/A1L.jpg",
-    description: "Spacious electric tricycle designed for passenger transport and commercial use.",
-    features: [
-      "2000W high-power motor",
-      // "All-terrain fat tires",
-      // "Premium suspension system",
-      // "LED headlight and display"
-    ],
-    specs: {
-      weight: "400 Kg",
-      dimensions: "2677 * 1359 * 1740 mm",
-      motor: "2000W",
-      battery: "72V 60Ah Lead Acid",
-      tires: "400-12 Tires",
-      //absorber: "Front suspension fork",
-      maxSpeed: "50 Km/h",
-      loadCapacity: "1000 Kg, 3 Passengers+1 Driver",
-      chargingTime: "6-8 hours",
-      optionalColors: ["Blue", "Red", "Navy", "Grey"],
-      packagingSize: "2200 x 1300 x 1500 mm",
-      //containerQty: "45 units",
-      warranty: "One-year replacement for non-human damage"
-    },
-    batteryOptions: [
-      { type: "Lead Acid", capacity: "72V 60Ah", price: 517000 },
-      { type: "Lithium", capacity: "72V 60Ah", price: 559000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 628000 },
-      { type: "Lithium", capacity: "72V 140Ah", price: 650000 }
+// {
+//     id: 27,
+//     name: "A1L(4000W)",
+//     category: "electric-tricycles-passenger",
+//     basePrice: 650000,
+//     rating: 4.8,
+//     image: "Images/mobility/A1L.jpg",
+//     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
+//     features: [
+//       "2000W high-power motor",
+//       // "All-terrain fat tires",
+//       // "Premium suspension system",
+//       // "LED headlight and display"
+//     ],
+//     specs: {
+//       weight: "400 Kg",
+//       dimensions: "2677 * 1359 * 1740 mm",
+//       motor: "2000W",
+//       battery: "72V 60Ah Lead Acid",
+//       tires: "400-12 Tires",
+//       //absorber: "Front suspension fork",
+//       maxSpeed: "50 Km/h",
+//       loadCapacity: "1000 Kg, 3 Passengers+1 Driver",
+//       chargingTime: "6-8 hours",
+//       optionalColors: ["Blue", "Red", "Navy", "Grey"],
+//       packagingSize: "2200 x 1300 x 1500 mm",
+//       //containerQty: "45 units",
+//       warranty: "One-year replacement for non-human damage"
+//     },
+//     batteryOptions: [
+//       { type: "Lead Acid", capacity: "72V 60Ah", price: 517000 },
+//       { type: "Lithium", capacity: "72V 60Ah", price: 559000 },
+//       { type: "Lithium", capacity: "72V 100Ah", price: 628000 },
+//       { type: "Lithium", capacity: "72V 140Ah", price: 650000 }
       
-    ],
-    stock: 15,
-    bestSeller: true,
-    range: 205,
-    maxSpeed: 50,
-    chargingTime: 7
-  },
+//     ],
+//     stock: 15,
+//     bestSeller: true,
+//     range: 205,
+//     maxSpeed: 50,
+//     chargingTime: 7
+//   },
 
 {
     id: 3,
