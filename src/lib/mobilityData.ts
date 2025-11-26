@@ -323,7 +323,7 @@ export const mobilityProducts: MobilityProduct[] = [
       tires: "400-12 Tires",
       //absorber: "Front suspension fork",
       maxSpeed: "50 Km/h",
-      loadCapacity: "1000 Kg, 3 Passengers+1 Driver",
+      loadCapacity: "1000 Kg, 6 Passengers+1 Driver",
       chargingTime: "6-8 hours",
       optionalColors: ["Blue", "Red", "Navy", "Grey"],
       packagingSize: "2200 x 1300 x 1500 mm",
