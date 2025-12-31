@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { useState } from "react";
 import { mobilityProducts } from "@/lib/mobilityData";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -8,6 +9,7 @@ import { ArrowLeft } from "lucide-react";
 const MobilityDetail = () => {
   const { id } = useParams();
   const product = mobilityProducts.find((p) => p.id === Number(id));
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   if (!product) {
     return (
@@ -26,21 +28,30 @@ const MobilityDetail = () => {
       <Navbar />
 
       <main className="container mx-auto px-4 py-12 flex flex-col md:flex-row gap-10">
-        {/* Left: Image */}
+        {/* Left: Image (no blink) */}
         <div className="flex-1 flex justify-center items-start">
+          {!imageLoaded && (
+            <div className="w-full max-w-md h-64 bg-gray-800 rounded-md animate-pulse" />
+          )}
+
           <img
             src={product.image}
             alt={product.name}
+            onLoad={() => setImageLoaded(true)}
             onError={(e) => {
-              e.currentTarget.src = "/placeholder.png"; // fallback image
+              e.currentTarget.src = "/placeholder.png";
             }}
-            className="w-full max-w-md mx-auto object-contain rounded-md border shadow bg-white"
+            className={`w-full max-w-md mx-auto object-contain rounded-md border shadow bg-white ${
+              imageLoaded ? "block" : "hidden"
+            }`}
           />
         </div>
 
         {/* Right: Product Info */}
         <div className="flex-1 space-y-6">
-          <h1 className="text-3xl font-bold text-green-400">{product.name}</h1>
+          <h1 className="text-3xl font-bold text-green-400">
+            {product.name}
+          </h1>
 
           {/* Price */}
           <p className="text-xl font-semibold text-green-300">
@@ -56,7 +67,7 @@ const MobilityDetail = () => {
             </div>
           )}
 
-          {/* Specs */}
+          {/* Specifications */}
           {product.specs && (
             <div>
               <h2 className="font-semibold text-lg">Specifications</h2>
@@ -64,7 +75,9 @@ const MobilityDetail = () => {
                 {Object.entries(product.specs).map(([key, value]) =>
                   value ? (
                     <li key={key}>
-                      <strong>{key.replace(/([A-Z])/g, " $1")}: </strong>
+                      <strong>
+                        {key.replace(/([A-Z])/g, " $1")}:
+                      </strong>{" "}
                       {Array.isArray(value) ? value.join(", ") : value}
                     </li>
                   ) : null
@@ -94,7 +107,8 @@ const MobilityDetail = () => {
                   <li key={index}>
                     <strong>Type:</strong> {battery.type},{" "}
                     <strong>Capacity:</strong> {battery.capacity},{" "}
-                    <strong>Price:</strong> {battery.price.toLocaleString()} ETB
+                    <strong>Price:</strong>{" "}
+                    {battery.price.toLocaleString()} ETB
                   </li>
                 ))}
               </ul>
