@@ -1,5 +1,4 @@
 import { useParams, Link } from "react-router-dom";
-import { useState } from "react";
 import { mobilityProducts } from "@/lib/mobilityData";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,7 +8,6 @@ import { ArrowLeft } from "lucide-react";
 const MobilityDetail = () => {
   const { id } = useParams();
   const product = mobilityProducts.find((p) => p.id === Number(id));
-  const [imageLoaded, setImageLoaded] = useState(false);
 
   if (!product) {
     return (
@@ -27,34 +25,20 @@ const MobilityDetail = () => {
     <div className="min-h-screen flex flex-col bg-gray-900 text-white">
       <Navbar />
 
-      <main className="container mx-auto px-4 py-12 flex flex-col md:flex-row gap-10">
-        {/* Left: Image (no blink) */}
-        <div className="flex-1 flex justify-center items-start">
-          {!imageLoaded && (
-            <div className="w-full max-w-md h-64 bg-gray-800 rounded-md animate-pulse" />
-          )}
+      {/* 
+        Image section intentionally removed due to blinking issue.
+        Uncomment and fix later if needed.
+      */}
 
-          <img
-            src={product.image}
-            alt={product.name}
-            onLoad={() => setImageLoaded(true)}
-            onError={(e) => {
-              e.currentTarget.src = "/placeholder.png";
-            }}
-            className={`w-full max-w-md mx-auto object-contain rounded-md border shadow bg-white ${
-              imageLoaded ? "block" : "hidden"
-            }`}
-          />
-        </div>
-
-        {/* Right: Product Info */}
-        <div className="flex-1 space-y-6">
-          <h1 className="text-3xl font-bold text-green-400">
+      <main className="container mx-auto px-4 py-12">
+        {/* Product Info - Full Width */}
+        <div className="max-w-3xl mx-auto space-y-6">
+          <h1 className="text-3xl font-bold text-green-400 text-center">
             {product.name}
           </h1>
 
           {/* Price */}
-          <p className="text-xl font-semibold text-green-300">
+          <p className="text-xl font-semibold text-green-300 text-center">
             {product.basePrice.toLocaleString()}{" "}
             <span className="text-sm text-gray-300">ETB</span>
           </p>
@@ -116,20 +100,22 @@ const MobilityDetail = () => {
           )}
 
           {/* Add to Cart */}
-          <div className="pt-4">
+          <div className="pt-4 text-center">
             <Button className="bg-green-600 hover:bg-green-700 text-white">
               Add to Cart
             </Button>
           </div>
 
           {/* Back Link */}
-          <Link
-            to="/mobility"
-            className="inline-block mt-4 text-green-400 hover:underline text-sm"
-          >
-            <ArrowLeft className="inline-block w-4 h-4 mr-1" />
-            Back to Mobility
-          </Link>
+          <div className="text-center">
+            <Link
+              to="/mobility"
+              className="inline-flex items-center gap-1 mt-4 text-green-400 hover:underline text-sm"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Mobility
+            </Link>
+          </div>
         </div>
       </main>
 

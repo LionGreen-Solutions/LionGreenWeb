@@ -51,7 +51,7 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 28,
   name: "EA-100 (7.5kW)",
   category: "electric-cars-compact",
-  basePrice: 0,
+  basePrice: 1975000,
   rating: 4.8,
   image: "Images/mobility/EA-100.png",
   description: "Compact 5-seat electric vehicle designed for urban mobility with efficient lithium battery and modern comfort features.",
@@ -85,8 +85,9 @@ export const mobilityProducts: MobilityProduct[] = [
     {
       type: "Lithium Phosphate (Blade)",
       capacity: "13 kWh",
-      price: 0
-    }
+      price: 1975000
+    },
+    
   ],
   stock: 15,
   bestSeller: false,
@@ -94,11 +95,61 @@ export const mobilityProducts: MobilityProduct[] = [
   maxSpeed: 75,
   chargingTime: null
 },
-{
+
+ {
   id: 29,
+  name: "EA-100 (7.5kW)",
+  category: "electric-cars-compact",
+  basePrice: 2350000,
+  rating: 4.8,
+  image: "Images/mobility/EA-100.png",
+  description: "Compact 5-seat electric vehicle designed for urban mobility with efficient lithium battery and modern comfort features.",
+  features: [
+    "7.5kW electric motor",
+    "Blade lithium phosphate battery",
+    "Power steering",
+    "Digital display and multimedia system",
+    "Electric windows with modern interior trim"
+  ],
+  specs: {
+    weight: null,
+    dimensions: "3670 x 1636 x 1530 mm",
+    motor: "7.5 kW",
+    battery: "13 kWh Blade Lithium Phosphate",
+    tires: "155/65 R14",
+    maxSpeed: "75 Km/h",
+    loadCapacity: "5 Passengers",
+    range: "180 Km (CLTC)",
+    gradeAbility: "20%",
+    suspension: "MacPherson strut suspension",
+    brakingSystem: "Front disc brake & rear drum brake",
+    steeringSystem: "Power steering",
+    drivePosition: "LHD",
+    chargingPort: "Ethiopian type",
+    optionalFeatures: ["A/C"],
+    warranty:
+      "5 years for power battery, electric motor, and controller; 1 year for other parts"
+  },
+  batteryOptions: [
+    {
+      type: "Lithium Phosphate (Blade)",
+      capacity: "13 kWh",
+      price: 2350000
+    },
+    
+  ],
+  stock: 15,
+  bestSeller: false,
+  range: 350,
+  maxSpeed: 75,
+  chargingTime: null
+},
+
+{
+  id: 30,
   name: "EA-200 (7.5kW)",
   category: "electric-cars-compact",
-  basePrice: 0,
+  basePrice: 2150000,
   rating: 4.8,
   image: "Images/mobility/EA-200.png",
   description: "Compact 5-seat electric car with extended body size, efficient blade lithium battery, and essential comfort features for urban and suburban driving.",
@@ -132,7 +183,7 @@ export const mobilityProducts: MobilityProduct[] = [
     {
       type: "Lithium Phosphate (Blade)",
       capacity: "13 kWh",
-      price: 0
+      price: 2150000
     }
   ],
   stock: 15,
@@ -143,12 +194,60 @@ export const mobilityProducts: MobilityProduct[] = [
 },
 
 {
-  id: 30,
+  id: 31,
+  name: "EA-200 (7.5kW)",
+  category: "electric-cars-compact",
+  basePrice: 2500000,
+  rating: 4.8,
+  image: "Images/mobility/EA-200.png",
+  description: "Compact 5-seat electric car with extended body size, efficient blade lithium battery, and essential comfort features for urban and suburban driving.",
+  features: [
+    "7.5kW electric motor",
+    "Blade lithium phosphate battery system",
+    "Power steering",
+    "Electric windows",
+    "Digital clock and multimedia system"
+  ],
+  specs: {
+    weight: null,
+    dimensions: "4055 x 1630 x 1510 mm",
+    motor: "7.5 kW",
+    battery: "13 kWh Blade Lithium Phosphate",
+    tires: "155/65 R14",
+    maxSpeed: "75 Km/h",
+    loadCapacity: "5 Passengers",
+    range: "180 Km (CLTC)",
+    gradeAbility: "20%",
+    suspension: "MacPherson strut type suspension",
+    brakingSystem: "Front disc brake & rear drum brake",
+    steeringSystem: "Power steering",
+    drivePosition: "LHD",
+    chargingPort: "Ethiopian type",
+    optionalFeatures: ["A/C"],
+    warranty:
+      "5 years for power battery, electric motor, and controller; 1 year for other parts"
+  },
+  batteryOptions: [
+    {
+      type: "Lithium Phosphate (Blade)",
+      capacity: "13 kWh",
+      price: 2500000
+    }
+  ],
+  stock: 15,
+  bestSeller: false,
+  range: 350,
+  maxSpeed: 75,
+  chargingTime: null
+},
+
+{
+  id: 32,
   name: "NE-001",
   category: "electric-cars-compact",
-  basePrice: 0,
+  basePrice: 1450000,
   rating: 4.8,
-  image: "Images/mobility/NE-001.webp",
+  image: "Images/mobility/NE-001.png",
   description: "Compact 5-seat electric vehicle designed for city driving, offering efficient energy consumption and essential comfort features.",
   features: [
     "Electric motor (Vetech)",
@@ -181,7 +280,7 @@ export const mobilityProducts: MobilityProduct[] = [
     {
       type: "Lithium",
       capacity: "14832 Wh (14.832 kWh)",
-      price: 0
+      price: 1450000
     }
   ],
   stock: 15,

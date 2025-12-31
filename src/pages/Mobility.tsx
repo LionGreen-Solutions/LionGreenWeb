@@ -14,9 +14,9 @@ const Mobility = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-slate-800 to-green-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">EcoFlow Mobility Products</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Mobility Products</h1>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Discover sustainable electric bikes and mobility solutions.
+            Discover sustainable electric Vehicle and mobility solutions.
           </p>
         </div>
       </section>
@@ -25,7 +25,7 @@ const Mobility = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-600 mb-4">EcoFlow Mobility Line</h2>
+            <h2 className="text-3xl font-bold text-green-600 mb-4">Mobility Line</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Reliable, clean, and modern mobility for urban & off-road adventures.
             </p>
