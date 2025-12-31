@@ -50,8 +50,8 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 28,
   name: "EA-100 (7.5kW)",
   category: "electric-cars-compact",
-  basePrice: null,
-  rating: null,
+  basePrice: 0,
+  rating: 4.8,
   image: "Images/mobility/EA-100.png",
   description: "Compact 5-seat electric vehicle designed for urban mobility with efficient lithium battery and modern comfort features.",
   features: [
@@ -97,8 +97,8 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 29,
   name: "EA-200 (7.5kW)",
   category: "electric-cars-compact",
-  basePrice: null,
-  rating: null,
+  basePrice: 0,
+  rating: 4.8,
   image: "Images/mobility/EA-200.png",
   description: "Compact 5-seat electric car with extended body size, efficient blade lithium battery, and essential comfort features for urban and suburban driving.",
   features: [
@@ -145,8 +145,8 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 30,
   name: "NE-001",
   category: "electric-cars-compact",
-  basePrice: null,
-  rating: null,
+  basePrice: 0,
+  rating: 4.8,
   image: "Images/mobility/NE-001.webp",
   description: "Compact 5-seat electric vehicle designed for city driving, offering efficient energy consumption and essential comfort features.",
   features: [
