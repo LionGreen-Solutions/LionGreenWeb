@@ -47,6 +47,151 @@ export const mobilityCategories = [
 
 export const mobilityProducts: MobilityProduct[] = [
   {
+  id: 28,
+  name: "EA-100 (7.5kW)",
+  category: "electric-cars-compact",
+  basePrice: null,
+  rating: null,
+  image: "Images/mobility/EA-100.png",
+  description: "Compact 5-seat electric vehicle designed for urban mobility with efficient lithium battery and modern comfort features.",
+  features: [
+    "7.5kW electric motor",
+    "Blade lithium phosphate battery",
+    "Power steering",
+    "Digital display and multimedia system",
+    "Electric windows with modern interior trim"
+  ],
+  specs: {
+    weight: null,
+    dimensions: "3670 x 1636 x 1530 mm",
+    motor: "7.5 kW",
+    battery: "13 kWh Blade Lithium Phosphate",
+    tires: "155/65 R14",
+    maxSpeed: "75 Km/h",
+    loadCapacity: "5 Passengers",
+    range: "180 Km (CLTC)",
+    gradeAbility: "20%",
+    suspension: "MacPherson strut suspension",
+    brakingSystem: "Front disc brake & rear drum brake",
+    steeringSystem: "Power steering",
+    drivePosition: "LHD",
+    chargingPort: "Ethiopian type",
+    optionalFeatures: ["A/C"],
+    warranty:
+      "5 years for power battery, electric motor, and controller; 1 year for other parts"
+  },
+  batteryOptions: [
+    {
+      type: "Lithium Phosphate (Blade)",
+      capacity: "13 kWh",
+      price: null
+    }
+  ],
+  stock: null,
+  bestSeller: false,
+  range: 180,
+  maxSpeed: 75,
+  chargingTime: null
+},
+{
+  id: 29,
+  name: "EA-200 (7.5kW)",
+  category: "electric-cars-compact",
+  basePrice: null,
+  rating: null,
+  image: "Images/mobility/EA-200.png",
+  description: "Compact 5-seat electric car with extended body size, efficient blade lithium battery, and essential comfort features for urban and suburban driving.",
+  features: [
+    "7.5kW electric motor",
+    "Blade lithium phosphate battery system",
+    "Power steering",
+    "Electric windows",
+    "Digital clock and multimedia system"
+  ],
+  specs: {
+    weight: null,
+    dimensions: "4055 x 1630 x 1510 mm",
+    motor: "7.5 kW",
+    battery: "13 kWh Blade Lithium Phosphate",
+    tires: "155/65 R14",
+    maxSpeed: "75 Km/h",
+    loadCapacity: "5 Passengers",
+    range: "180 Km (CLTC)",
+    gradeAbility: "20%",
+    suspension: "MacPherson strut type suspension",
+    brakingSystem: "Front disc brake & rear drum brake",
+    steeringSystem: "Power steering",
+    drivePosition: "LHD",
+    chargingPort: "Ethiopian type",
+    optionalFeatures: ["A/C"],
+    warranty:
+      "5 years for power battery, electric motor, and controller; 1 year for other parts"
+  },
+  batteryOptions: [
+    {
+      type: "Lithium Phosphate (Blade)",
+      capacity: "13 kWh",
+      price: null
+    }
+  ],
+  stock: null,
+  bestSeller: false,
+  range: 180,
+  maxSpeed: 75,
+  chargingTime: null
+},
+
+{
+  id: 30,
+  name: "NE-001",
+  category: "electric-cars-compact",
+  basePrice: null,
+  rating: null,
+  image: "Images/mobility/NE-001.webp",
+  description: "Compact 5-seat electric vehicle designed for city driving, offering efficient energy consumption and essential comfort features.",
+  features: [
+    "Electric motor (Vetech)",
+    "Lithium battery system",
+    "Electric lifting windows",
+    "Leather covered seats",
+    "Audio-vision system with USB support"
+  ],
+  specs: {
+    weight: null,
+    dimensions: "3200 x 1680 x 1550 mm",
+    motor: "Vetech electric motor",
+    battery: "14.832 kWh Lithium Battery",
+    tires: "155/70 R12",
+    maxSpeed: "70 Km/h",
+    loadCapacity: "5 Passengers",
+    range: null,
+    gradeAbility: "20%",
+    suspension: "MacPherson strut type suspension",
+    brakingSystem: "Front disc brake & rear drum brake",
+    steeringSystem: "Manual steering (No power steering)",
+    drivePosition: "LHD",
+    chargingPort: "Ethiopian type",
+    interior: "New interior trim, leather covered seats",
+    optionalFeatures: ["A/C"],
+    warranty:
+      "5 years for power battery, electric motor and electric controller; 1 year for other parts"
+  },
+  batteryOptions: [
+    {
+      type: "Lithium",
+      capacity: "14832 Wh (14.832 kWh)",
+      price: null
+    }
+  ],
+  stock: null,
+  bestSeller: false,
+  range: null,
+  maxSpeed: 70,
+  chargingTime: null
+},
+
+
+  {
     id: 1,
     name: "A0(2000W)",
     category: "electric-tricycles-passenger",
