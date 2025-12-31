@@ -42,7 +42,8 @@ export const mobilityCategories = [
   { id: 2, name: "Electric Scooters", slug: "electric-scooters" },
   { id: 3, name: "Electric Motorcycles", slug: "electric-motorcycles" },
   { id: 4, name: "Electric Tricycles - Passenger", slug: "electric-tricycles-passenger" },
-  { id: 5, name: "Electric Tricycles - Cargo", slug: "electric-tricycles-cargo" }
+  { id: 5, name: "Electric Tricycles - Cargo", slug: "electric-tricycles-cargo" },
+  { id: 6, name: "Electric Cars - Compact", slug: "electric-cars-compact" }
 ];
 
 export const mobilityProducts: MobilityProduct[] = [
@@ -84,10 +85,10 @@ export const mobilityProducts: MobilityProduct[] = [
     {
       type: "Lithium Phosphate (Blade)",
       capacity: "13 kWh",
-      price: null
+      price: 0
     }
   ],
-  stock: null,
+  stock: 15,
   bestSeller: false,
   range: 180,
   maxSpeed: 75,
@@ -131,10 +132,10 @@ export const mobilityProducts: MobilityProduct[] = [
     {
       type: "Lithium Phosphate (Blade)",
       capacity: "13 kWh",
-      price: null
+      price: 0
     }
   ],
-  stock: null,
+  stock: 15,
   bestSeller: false,
   range: 180,
   maxSpeed: 75,
@@ -164,7 +165,7 @@ export const mobilityProducts: MobilityProduct[] = [
     tires: "155/70 R12",
     maxSpeed: "70 Km/h",
     loadCapacity: "5 Passengers",
-    range: null,
+    range: 180,
     gradeAbility: "20%",
     suspension: "MacPherson strut type suspension",
     brakingSystem: "Front disc brake & rear drum brake",
@@ -180,12 +181,12 @@ export const mobilityProducts: MobilityProduct[] = [
     {
       type: "Lithium",
       capacity: "14832 Wh (14.832 kWh)",
-      price: null
+      price: 0
     }
   ],
-  stock: null,
+  stock: 15,
   bestSeller: false,
-  range: null,
+  range: 180,
   maxSpeed: 70,
   chargingTime: null
 },
