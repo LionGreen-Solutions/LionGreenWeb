@@ -4,10 +4,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import { useState } from "react";
+import { spareParts } from "@/lib/sparePartsData";
 
 const MobilityDetail = () => {
   const { id } = useParams();
   const product = mobilityProducts.find((p) => p.id === Number(id));
+  const [showSpares, setShowSpares] = useState(false);
 
   if (!product) {
     return (
@@ -106,6 +109,15 @@ const MobilityDetail = () => {
             </Button>
           </div>
 
+          <div className="pt-2 text-center">
+            <Button
+              onClick={() => setShowSpares(true)}
+              className="bg-white text-green-600 hover:bg-gray-200"
+            >
+              View Spare Parts
+            </Button>
+          </div>
+
           {/* Back Link */}
           <div className="text-center">
             <Link
@@ -120,6 +132,46 @@ const MobilityDetail = () => {
       </main>
 
       <Footer />
+                {showSpares && (
+            <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+              <div className="bg-white text-black w-[90%] max-w-3xl rounded-lg p-6 relative">
+                
+                {/* Close Button */}
+                <button
+                  onClick={() => setShowSpares(false)}
+                  className="absolute top-2 right-3 text-xl font-bold"
+                >
+                  ✕
+                </button>
+
+                <h2 className="text-2xl font-bold mb-4 text-green-600 text-center">
+                  Spare Parts
+                </h2>
+
+                {/* Grid */}
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  {spareParts.map((item) => (
+                    <div
+                      key={item.id}
+                      className="border p-3 rounded text-center bg-gray-50 hover:shadow"
+                    >
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="h-24 mx-auto object-contain mb-2"
+                      />
+                      <p className="text-sm font-semibold text-green-700">
+                        {item.name}
+                      </p>
+                      <p className="text-xs text-gray-600">
+                        {item.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
     </div>
   );
 };

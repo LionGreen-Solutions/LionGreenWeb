@@ -421,7 +421,7 @@ export const mobilityProducts: MobilityProduct[] = [
     id: 22,
     name: "A1(3000W)",
     category: "electric-tricycles-passenger",
-    basePrice: 480000,
+    basePrice: 556818,
     rating: 4.8,
     image: "Images/mobility/A1.png",
     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
@@ -449,8 +449,8 @@ export const mobilityProducts: MobilityProduct[] = [
     batteryOptions: [
       // { type: "Lead Acid", capacity: "72V 60Ah", price: 417000 },
       // { type: "Lithium", capacity: "72V 60Ah", price: 459000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 480000 },
-      { type: "Lithium", capacity: "72V 150Ah", price: 510000 }
+      { type: "Lithium", capacity: "72V 100Ah", price: 511363 },
+      { type: "Lithium", capacity: "72V 150Ah", price: 556818 }
       
     ],
     stock: 15,
@@ -550,7 +550,7 @@ export const mobilityProducts: MobilityProduct[] = [
     id: 26,
     name: "A1L(3000W)",
     category: "electric-tricycles-passenger",
-    basePrice: 530000,
+    basePrice: 602272,
     rating: 4.8,
     image: "Images/mobility/A1L.jpg",
     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
@@ -578,8 +578,8 @@ export const mobilityProducts: MobilityProduct[] = [
     batteryOptions: [
       // { type: "Lead Acid", capacity: "72V 60Ah", price: 517000 },
       // { type: "Lithium", capacity: "72V 60Ah", price: 559000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 530000 },
-      { type: "Lithium", capacity: "72V 150Ah", price: 560000 }
+      { type: "Lithium", capacity: "72V 100Ah", price: 556818 },
+      { type: "Lithium", capacity: "72V 150Ah", price: 602272}
       
     ],
     stock: 15,
