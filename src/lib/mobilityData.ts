@@ -293,9 +293,9 @@ export const mobilityProducts: MobilityProduct[] = [
 
   {
     id: 1,
-    name: "A0(2000W)",
+    name: "A0",
     category: "electric-tricycles-passenger",
-    basePrice: 475000,
+    basePrice: 450000,
     rating: 4.8,
     image: "Images/mobility/A0.webp",
     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
@@ -321,8 +321,8 @@ export const mobilityProducts: MobilityProduct[] = [
       warranty: "One-year replacement for non-human damage"
     },
     batteryOptions: [
-      { type: "Lead Acid", capacity: "72V 60Ah", price: 475000 },
-      // { type: "Lithium", capacity: "72V 60Ah", price: 400000 },
+      // { type: "Lead Acid", capacity: "72V 60Ah", price: 475000 },
+      { type: "Lithium", capacity: "72V 60Ah", price: 450000 },
       // { type: "Lithium", capacity: "72V 100Ah", price: 470000 },
       // { type: "Lithium", capacity: "72V 140Ah", price: 498000 },
     ],
@@ -333,47 +333,47 @@ export const mobilityProducts: MobilityProduct[] = [
     chargingTime: 7
   },
 
-//  {
-//     id: 23,
-//     name: "A0(3000W)",
-//     category: "electric-tricycles-passenger",
-//     basePrice: 385000,
-//     rating: 4.8,
-//     image: "Images/mobility/A0.webp",
-//     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
-//     features: [
-//       "2000W high-power motor",
-//       // "All-terrain fat tires",
-//       // "Premium suspension system",
-//       // "LED headlight and display"
-//     ],
-//     specs: {
-//       weight: "325 Kg",
-//       dimensions: "2900 * 1000 * 1700 mm",
-//       motor: "2000W",
-//       battery: "72V 60Ah, Lead Acid",
-//       tires: "400-12 Tires",
-//       //absorber: "Front suspension fork",
-//       maxSpeed: "50 Km/h",
-//       loadCapacity: "1000 Kg, 4 Passengers+1 Driver",
-//       chargingTime: "6-8 hours",
-//       optionalColors: ["Blue", "Yellow", "Red", "Navy", "Grey"],
-//       packagingSize: "2500 x 1100 x 850 mm",
-//       //containerQty: "45 units",
-//       warranty: "One-year replacement for non-human damage"
-//     },
-//     batteryOptions: [
-//       { type: "Lead Acid", capacity: "72V 60Ah", price: 385000 },
-//       { type: "Lithium", capacity: "72V 60Ah", price: 426000 },
-//       { type: "Lithium", capacity: "72V 100Ah", price: 496000 },
-//       { type: "Lithium", capacity: "72V 140Ah", price: 523000 },
-//     ],
-//     stock: 15,
-//     bestSeller: true,
-//     range: 50,
-//     maxSpeed: 50,
-//     chargingTime: 7
-//   }, 
+ {
+    id: 23,
+    name: "A0L",
+    category: "electric-tricycles-passenger",
+    basePrice: 550000,
+    rating: 4.8,
+    image: "Images/mobility/A0.webp",
+    description: "Spacious electric tricycle designed for passenger transport and commercial use.",
+    features: [
+      "2000W high-power motor",
+      // "All-terrain fat tires",
+      // "Premium suspension system",
+      // "LED headlight and display"
+    ],
+    specs: {
+      weight: "325 Kg",
+      dimensions: "2900 * 1000 * 1700 mm",
+      motor: "2000W",
+      battery: "72V 60Ah, Lead Acid",
+      tires: "400-12 Tires",
+      //absorber: "Front suspension fork",
+      maxSpeed: "50 Km/h",
+      loadCapacity: "1000 Kg, 4 Passengers+1 Driver",
+      chargingTime: "6-8 hours",
+      optionalColors: ["Blue", "Yellow", "Red", "Navy", "Grey"],
+      packagingSize: "2500 x 1100 x 850 mm",
+      //containerQty: "45 units",
+      warranty: "One-year replacement for non-human damage"
+    },
+    batteryOptions: [
+      // { type: "Lead Acid", capacity: "72V 60Ah", price: 385000 },
+      { type: "Lithium", capacity: "72V 60Ah", price: 550000 },
+      // { type: "Lithium", capacity: "72V 100Ah", price: 496000 },
+      // { type: "Lithium", capacity: "72V 140Ah", price: 523000 },
+    ],
+    stock: 15,
+    bestSeller: true,
+    range: 50,
+    maxSpeed: 50,
+    chargingTime: 7
+  }, 
 
 // {
 //     id: 2,
@@ -421,7 +421,7 @@ export const mobilityProducts: MobilityProduct[] = [
     id: 22,
     name: "A1(3000W)",
     category: "electric-tricycles-passenger",
-    basePrice: 556818,
+    basePrice: 645000,
     rating: 4.8,
     image: "Images/mobility/A1.png",
     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
@@ -449,8 +449,8 @@ export const mobilityProducts: MobilityProduct[] = [
     batteryOptions: [
       // { type: "Lead Acid", capacity: "72V 60Ah", price: 417000 },
       // { type: "Lithium", capacity: "72V 60Ah", price: 459000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 511363 },
-      { type: "Lithium", capacity: "72V 150Ah", price: 556818 }
+      { type: "Lithium", capacity: "72V 100Ah", price: 595000 },
+      { type: "Lithium", capacity: "72V 150Ah", price: 645000 }
       
     ],
     stock: 15,
@@ -550,7 +550,7 @@ export const mobilityProducts: MobilityProduct[] = [
     id: 26,
     name: "A1L(3000W)",
     category: "electric-tricycles-passenger",
-    basePrice: 602272,
+    basePrice: 750000,
     rating: 4.8,
     image: "Images/mobility/A1L.jpg",
     description: "Spacious electric tricycle designed for passenger transport and commercial use.",
@@ -578,8 +578,8 @@ export const mobilityProducts: MobilityProduct[] = [
     batteryOptions: [
       // { type: "Lead Acid", capacity: "72V 60Ah", price: 517000 },
       // { type: "Lithium", capacity: "72V 60Ah", price: 559000 },
-      { type: "Lithium", capacity: "72V 100Ah", price: 556818 },
-      { type: "Lithium", capacity: "72V 150Ah", price: 602272}
+      { type: "Lithium", capacity: "72V 100Ah", price: 695000 },
+      { type: "Lithium", capacity: "72V 150Ah", price: 750000 }
       
     ],
     stock: 15,
@@ -632,218 +632,218 @@ export const mobilityProducts: MobilityProduct[] = [
 //     chargingTime: 7
 //   },
 
-{
-    id: 3,
-    name: "B001",
-    category: "electric-bikes",
-    basePrice: 80000,
-    rating: 4.8,
-    image: "Images/mobility/B001.webp",
-    description: "High-performance electric bike with robust design and premium components.",
-    features: [
-      "350W high-power motor",
-      // "All-terrain fat tires",
-      // "Premium suspension system",
-      // "LED headlight and display"
-    ],
-    specs: {
-      weight: "43 Kg",
-      dimensions: "1450 * 700 * 1060 mm",
-      motor: "350W",
-      battery: "48V 12Ah Lead acid",
-      tires: "2.50-14 Tires",
-      //absorber: "Front suspension fork",
-      maxSpeed: "25 Km/h",
-      loadCapacity: "120 Kg",
-      chargingTime: "6-8 hours",
-      optionalColors: ["Blue", "Red", "White", "Green", "Yellow"],
-      packagingSize: "1200 x 280 x 650 mm",
-      //containerQty: "45 units",
-      warranty: "One-year replacement for non-human damage"
-    },
-    batteryOptions: [
-      { type: "Lead Acid", capacity: "48V 12Ah", price: 80000 },
-      // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-      // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
-    ],
-    stock: 15,
-    bestSeller: true,
-    //range: 205,
-    maxSpeed: 25,
-    chargingTime: 7
-  },
+// {
+//     id: 3,
+//     name: "B001",
+//     category: "electric-bikes",
+//     basePrice: 80000,
+//     rating: 4.8,
+//     image: "Images/mobility/B001.webp",
+//     description: "High-performance electric bike with robust design and premium components.",
+//     features: [
+//       "350W high-power motor",
+//       // "All-terrain fat tires",
+//       // "Premium suspension system",
+//       // "LED headlight and display"
+//     ],
+//     specs: {
+//       weight: "43 Kg",
+//       dimensions: "1450 * 700 * 1060 mm",
+//       motor: "350W",
+//       battery: "48V 12Ah Lead acid",
+//       tires: "2.50-14 Tires",
+//       //absorber: "Front suspension fork",
+//       maxSpeed: "25 Km/h",
+//       loadCapacity: "120 Kg",
+//       chargingTime: "6-8 hours",
+//       optionalColors: ["Blue", "Red", "White", "Green", "Yellow"],
+//       packagingSize: "1200 x 280 x 650 mm",
+//       //containerQty: "45 units",
+//       warranty: "One-year replacement for non-human damage"
+//     },
+//     batteryOptions: [
+//       { type: "Lead Acid", capacity: "48V 12Ah", price: 80000 },
+//       // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+//       // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+//     ],
+//     stock: 15,
+//     bestSeller: true,
+//     //range: 205,
+//     maxSpeed: 25,
+//     chargingTime: 7
+//   },
 
-{
-   id: 4,
-   name: "B002",
-   category: "electric-bikes",
-   basePrice: 80000,
-   rating: 4.8,
-   image: "Images/mobility/B002.webp",
-   description: "High-performance electric bike with robust design and premium components.",
-   features: [
-     "450W high-power motor",
-    //  "All-terrain fat tires",
-    //  "Premium suspension system",
-    //  "LED headlight and display"
-   ],
-   specs: {
-     weight: "65 Kg",
-     dimensions: "1500 * 650 * 1200 mm",
-     motor: "450W",
-     battery: "60V 20Ah Lead acid",
-     tires: "2.50-14 Tires",
-     //absorber: "Front suspension fork",
-     maxSpeed: "35 Km/h",
-     loadCapacity: "150 Kg",
-     chargingTime: "6-8 hours",
-     optionalColors: ["Blue", "Yellow", "Red", "White", "Green"],
-     packagingSize: "1300 x 310 x 650 mm",
-     //containerQty: "45 units",
-     warranty: "One-year replacement for non-human damage"
-   },
-   batteryOptions: [
-     { type: "Lithium", capacity: "72V 60Ah", price: 80000 },
-    //  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-    //  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
-   ],
-   stock: 15,
-   bestSeller: true,
-   range: 60,
-   maxSpeed: 35,
-   chargingTime: 7
- },
+// {
+//    id: 4,
+//    name: "B002",
+//    category: "electric-bikes",
+//    basePrice: 80000,
+//    rating: 4.8,
+//    image: "Images/mobility/B002.webp",
+//    description: "High-performance electric bike with robust design and premium components.",
+//    features: [
+//      "450W high-power motor",
+//     //  "All-terrain fat tires",
+//     //  "Premium suspension system",
+//     //  "LED headlight and display"
+//    ],
+//    specs: {
+//      weight: "65 Kg",
+//      dimensions: "1500 * 650 * 1200 mm",
+//      motor: "450W",
+//      battery: "60V 20Ah Lead acid",
+//      tires: "2.50-14 Tires",
+//      //absorber: "Front suspension fork",
+//      maxSpeed: "35 Km/h",
+//      loadCapacity: "150 Kg",
+//      chargingTime: "6-8 hours",
+//      optionalColors: ["Blue", "Yellow", "Red", "White", "Green"],
+//      packagingSize: "1300 x 310 x 650 mm",
+//      //containerQty: "45 units",
+//      warranty: "One-year replacement for non-human damage"
+//    },
+//    batteryOptions: [
+//      { type: "Lithium", capacity: "72V 60Ah", price: 80000 },
+//     //  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+//     //  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+//    ],
+//    stock: 15,
+//    bestSeller: true,
+//    range: 60,
+//    maxSpeed: 35,
+//    chargingTime: 7
+//  },
 
-{
-  id: 5,
-  name: "B004",
-  category: "electric-bikes",
-  basePrice: 80000,
-  rating: 4.8,
-  image: "Images/mobility/B004.webp",
-  description: "High-performance electric bike with robust design and premium components.",
-  features: [
-    "500W high-power motor",
-    // "All-terrain fat tires",
-    // "Premium suspension system",
-    // "LED headlight and display"
-  ],
-  specs: {
-    weight: "74.5 Kg",
-    dimensions: "1500 * 660 * 1080 mm",
-    motor: "500W",
-    battery: "60V 20Ah Lead acid",
-    tires: "2.50-14 Tires",
-    //absorber: "Front suspension fork",
-    maxSpeed: "35 Km/h",
-    loadCapacity: "150 Kg",
-    chargingTime: "6-8 hours",
-    optionalColors: ["Blue", "Yellow", "Red", "White", "Green"],
-    packagingSize: "1300 x 310 x 650 mm",
-    //containerQty: "45 units",
-    warranty: "One-year replacement for non-human damage"
-  },
-  batteryOptions: [
-    { type: "Lithium", capacity: "72V 60Ah", price: 80000 },
-    // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-    // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
-  ],
-  stock: 15,
-  bestSeller: true,
-  range: 60,
-  maxSpeed: 35,
-  chargingTime: 7
-},
+// {
+//   id: 5,
+//   name: "B004",
+//   category: "electric-bikes",
+//   basePrice: 80000,
+//   rating: 4.8,
+//   image: "Images/mobility/B004.webp",
+//   description: "High-performance electric bike with robust design and premium components.",
+//   features: [
+//     "500W high-power motor",
+//     // "All-terrain fat tires",
+//     // "Premium suspension system",
+//     // "LED headlight and display"
+//   ],
+//   specs: {
+//     weight: "74.5 Kg",
+//     dimensions: "1500 * 660 * 1080 mm",
+//     motor: "500W",
+//     battery: "60V 20Ah Lead acid",
+//     tires: "2.50-14 Tires",
+//     //absorber: "Front suspension fork",
+//     maxSpeed: "35 Km/h",
+//     loadCapacity: "150 Kg",
+//     chargingTime: "6-8 hours",
+//     optionalColors: ["Blue", "Yellow", "Red", "White", "Green"],
+//     packagingSize: "1300 x 310 x 650 mm",
+//     //containerQty: "45 units",
+//     warranty: "One-year replacement for non-human damage"
+//   },
+//   batteryOptions: [
+//     { type: "Lithium", capacity: "72V 60Ah", price: 80000 },
+//     // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+//     // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+//   ],
+//   stock: 15,
+//   bestSeller: true,
+//   range: 60,
+//   maxSpeed: 35,
+//   chargingTime: 7
+// },
 
-{
-  id: 6,
-  name: "XB001",
-  category: "electric-bikes",
-  basePrice: 170000,
-  rating: 4.8,
-  image: "Images/mobility/XB001.webp",
-  description: "High-performance electric bike with robust design and premium components.",
-  features: [
-  "800W high-power motor",
-  // "All-terrain fat tires",
-  // "Premium suspension system",
-  // "LED headlight and display"
-  ],
-  specs: {
-  weight: "50 Kg",
-  dimensions: "1700 * 650 * 1050 mm",
-  motor: "800W",
-  battery: "48V 16Ah ",
-  //tires: "2.50-14 Tires",
-  //absorber: "Front suspension fork",
-  maxSpeed: "40 Km/h",
-  loadCapacity: "150 Kg",
-  chargingTime: "6-8 hours",
-  //optionalColors: ["Blue", "Yellow", "Red", "White", "Green"],
-  //packagingSize: "1300 x 310 x 650 mm",
-  //containerQty: "45 units",
-  warranty: "One-year replacement for non-human damage"
-  },
-  batteryOptions: [
-  { type: "Lithium", capacity: "48V 16Ah", price: 393000 },
-  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
-  ],
-  stock: 15,
-  bestSeller: true,
-  range: 80,
-  maxSpeed: 35,
-  chargingTime: 7
-},
+// {
+//   id: 6,
+//   name: "XB001",
+//   category: "electric-bikes",
+//   basePrice: 170000,
+//   rating: 4.8,
+//   image: "Images/mobility/XB001.webp",
+//   description: "High-performance electric bike with robust design and premium components.",
+//   features: [
+//   "800W high-power motor",
+//   // "All-terrain fat tires",
+//   // "Premium suspension system",
+//   // "LED headlight and display"
+//   ],
+//   specs: {
+//   weight: "50 Kg",
+//   dimensions: "1700 * 650 * 1050 mm",
+//   motor: "800W",
+//   battery: "48V 16Ah ",
+//   //tires: "2.50-14 Tires",
+//   //absorber: "Front suspension fork",
+//   maxSpeed: "40 Km/h",
+//   loadCapacity: "150 Kg",
+//   chargingTime: "6-8 hours",
+//   //optionalColors: ["Blue", "Yellow", "Red", "White", "Green"],
+//   //packagingSize: "1300 x 310 x 650 mm",
+//   //containerQty: "45 units",
+//   warranty: "One-year replacement for non-human damage"
+//   },
+//   batteryOptions: [
+//   { type: "Lithium", capacity: "48V 16Ah", price: 393000 },
+//   // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+//   // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+//   ],
+//   stock: 15,
+//   bestSeller: true,
+//   range: 80,
+//   maxSpeed: 35,
+//   chargingTime: 7
+// },
 
-{
-  id: 7,
-  name: "C0",
-  category: "electric-tricycles-cargo",
-  basePrice: 360000,
-  rating: 4.8,
-  image: "Images/mobility/C0.webp",
-  description: "Robust electric tricycle designed for cargo transport and heavy-duty applications.",
-  features: [
-  "1200W high-power motor",
-  // "All-terrain fat tires",
-  // "Premium suspension system",
-  // "LED headlight and display"
-  ],
-  specs: {
-  weight: "285 Kg",
-  dimensions: "3350 * 1380 * 1350 mm",
-  motor: "1200W",
-  battery: "60V 58Ah Lead acid",
-  //tires: "2.50-14 Tires",
-  //absorber: "Front suspension fork",
-  maxSpeed: "40 Km/h",
-  //loadCapacity: "150 Kg",
-  chargingTime: "6-8 hours",
-  optionalColors: ["Blue", "Red", "Navy", "Grey"],
-  packagingSize: "1600*1180*500mm",
-  //containerQty: "45 units",
-  warranty: "One-year replacement for non-human damage"
-  },
-  batteryOptions: [
-  { type: "Lead Acid", capacity: "60V 58Ah", price: 360000 },
-  { type: "Lithium", capacity: "60V 58Ah", price: 472500 },
-  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
-  ],
-  stock: 15,
-  bestSeller: true,
-  range: 90,
-  maxSpeed: 40,
-  chargingTime: 7
-},
+// {
+//   id: 7,
+//   name: "C0",
+//   category: "electric-tricycles-cargo",
+//   basePrice: 360000,
+//   rating: 4.8,
+//   image: "Images/mobility/C0.webp",
+//   description: "Robust electric tricycle designed for cargo transport and heavy-duty applications.",
+//   features: [
+//   "1200W high-power motor",
+//   // "All-terrain fat tires",
+//   // "Premium suspension system",
+//   // "LED headlight and display"
+//   ],
+//   specs: {
+//   weight: "285 Kg",
+//   dimensions: "3350 * 1380 * 1350 mm",
+//   motor: "1200W",
+//   battery: "60V 58Ah Lead acid",
+//   //tires: "2.50-14 Tires",
+//   //absorber: "Front suspension fork",
+//   maxSpeed: "40 Km/h",
+//   //loadCapacity: "150 Kg",
+//   chargingTime: "6-8 hours",
+//   optionalColors: ["Blue", "Red", "Navy", "Grey"],
+//   packagingSize: "1600*1180*500mm",
+//   //containerQty: "45 units",
+//   warranty: "One-year replacement for non-human damage"
+//   },
+//   batteryOptions: [
+//   { type: "Lead Acid", capacity: "60V 58Ah", price: 360000 },
+//   { type: "Lithium", capacity: "60V 58Ah", price: 472500 },
+//   // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+//   ],
+//   stock: 15,
+//   bestSeller: true,
+//   range: 90,
+//   maxSpeed: 40,
+//   chargingTime: 7
+// },
 
 {
   id: 8,
-  name: "C1",
+  name: "C1L",
   category: "electric-tricycles-cargo",
-  basePrice: 360000,
+  basePrice: 795000,
   rating: 4.8,
-  image: "Images/mobility/C1.webp",
+  image: "Images/mobility/C1L.png",
   description: "Robust electric tricycle designed for cargo transport and heavy-duty applications.",
   features: [
   "1200W high-power motor",
@@ -867,9 +867,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "60V 58Ah", price: 360000},
+  // { type: "Lithium", capacity: "60V 58Ah", price: 360000},
   // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+  { type: "Lithium", capacity: "72V 140Ah", price: 795000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -878,46 +878,46 @@ export const mobilityProducts: MobilityProduct[] = [
   chargingTime: 7
 },
 
-{
-  id: 9,
-  name: "C2",
-  category: "electric-tricycles-cargo",
-  basePrice: 360000,
-  rating: 4.8,
-  image: "Images/mobility/C2.webp",
-  description: "Robust electric tricycle designed for cargo transport and heavy-duty applications.",
-  features: [
-  "2000W high-power motor",
-  // "All-terrain fat tires",
-  // "Premium suspension system",
-  // "LED headlight and display"
-  ],
-  specs: {
-  weight: "1500 Kg",
-  dimensions: "3250 * 1100 * 1000 mm",
-  motor: "2000W",
-  battery: "72V 60Ah",
-  //tires: "2.50-14 Tires",
-  //absorber: "Front suspension fork",
-  maxSpeed: "40 Km/h",
-  //loadCapacity: "150 Kg",
-  chargingTime: "6-8 hours",
-  optionalColors: ["Blue", "Red", "Navy", "Grey"],
-  packagingSize: "1800*1380*500mm",
-  //containerQty: "45 units",
-  warranty: "One-year replacement for non-human damage"
-  },
-  batteryOptions: [
-  { type: "Lead Acid", capacity: "72V 60Ah", price: 360000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 472500 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 530000 }
-  ],
-  stock: 15,
-  bestSeller: true,
-  range: 90,
-  maxSpeed: 40,
-  chargingTime: 7
-},
+// {
+//   id: 9,
+//   name: "C2",
+//   category: "electric-tricycles-cargo",
+//   basePrice: 360000,
+//   rating: 4.8,
+//   image: "Images/mobility/C2.webp",
+//   description: "Robust electric tricycle designed for cargo transport and heavy-duty applications.",
+//   features: [
+//   "2000W high-power motor",
+//   // "All-terrain fat tires",
+//   // "Premium suspension system",
+//   // "LED headlight and display"
+//   ],
+//   specs: {
+//   weight: "1500 Kg",
+//   dimensions: "3250 * 1100 * 1000 mm",
+//   motor: "2000W",
+//   battery: "72V 60Ah",
+//   //tires: "2.50-14 Tires",
+//   //absorber: "Front suspension fork",
+//   maxSpeed: "40 Km/h",
+//   //loadCapacity: "150 Kg",
+//   chargingTime: "6-8 hours",
+//   optionalColors: ["Blue", "Red", "Navy", "Grey"],
+//   packagingSize: "1800*1380*500mm",
+//   //containerQty: "45 units",
+//   warranty: "One-year replacement for non-human damage"
+//   },
+//   batteryOptions: [
+//   { type: "Lead Acid", capacity: "72V 60Ah", price: 360000 },
+//   { type: "Lithium", capacity: "72V 100Ah", price: 472500 },
+//   { type: "Lithium", capacity: "72V 140Ah", price: 530000 }
+//   ],
+//   stock: 15,
+//   bestSeller: true,
+//   range: 90,
+//   maxSpeed: 40,
+//   chargingTime: 7
+// },
 
 {
   id: 10,
@@ -964,7 +964,7 @@ export const mobilityProducts: MobilityProduct[] = [
   id: 11,
   name: "M009",
   category: "electric-motorcycles",
-  basePrice: 125000,
+  basePrice: 165000,
   rating: 4.8,
   image: "Images/mobility/M009.webp",
   description: "High-performance electric Motorcycle with robust design and premium components.",
@@ -990,9 +990,9 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lead Acid", capacity: "72V 20Ah", price: 125000 },
-  { type: "Lithium", capacity: "60V 30Ah", price: 140000 },
-  { type: "Lithium", capacity: "60V 30Ah", price: 170000 }
+  // { type: "Lead Acid", capacity: "72V 20Ah", price: 125000 },
+  // { type: "Lithium", capacity: "60V 30Ah", price: 140000 },
+  { type: "Lithium", capacity: "60V 30Ah", price: 165000 }
   ],
   stock: 15,
   bestSeller: true,
@@ -1001,339 +1001,339 @@ export const mobilityProducts: MobilityProduct[] = [
   chargingTime: 7
 },
 
-{
-  id: 12,
-  name: "M3000",
-  category: "electric-motorcycles",
-  basePrice: 310000,
-  rating: 4.8,
-  image: "Images/mobility/M3000.webp",
-  description: "High-performance electric Motorcycle with robust design and premium components.",
-  features: [
-  "3000W high-power motor",
-  // "All-terrain fat tires",
-  // "Premium suspension system",
-  // "LED headlight and display"
-  ],
-  specs: {
-  weight: "105.5 Kg",
-  dimensions: "1950 * 750 * 1100 mm",
-  motor: "3000W",
-  battery: "72V 50Ah",
-  tires: "Front 80/100-19 Rear 110/90-16 Tires",
-  //absorber: "Front suspension fork",
-  maxSpeed: "100 Km/h",
-  loadCapacity: "150 Kg",
-  chargingTime: "6-8 hours",
-  //optionalColors: ["Blue", "Red", "Navy", "Grey"],
-  packagingSize: "2000 x 800 x 1200 mm",
-  //containerQty: "45 units",
-  warranty: "One-year replacement for non-human damage"
-  },
-  batteryOptions: [
-  { type: "Lithium", capacity: "72V 50Ah", price: 310000 },
-  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
-  ],
-  stock: 15,
-  bestSeller: true,
-  range: 80,
-  maxSpeed: 100,
-  chargingTime: 7
-},
+// {
+//   id: 12,
+//   name: "M3000",
+//   category: "electric-motorcycles",
+//   basePrice: 310000,
+//   rating: 4.8,
+//   image: "Images/mobility/M3000.webp",
+//   description: "High-performance electric Motorcycle with robust design and premium components.",
+//   features: [
+//   "3000W high-power motor",
+//   // "All-terrain fat tires",
+//   // "Premium suspension system",
+//   // "LED headlight and display"
+//   ],
+//   specs: {
+//   weight: "105.5 Kg",
+//   dimensions: "1950 * 750 * 1100 mm",
+//   motor: "3000W",
+//   battery: "72V 50Ah",
+//   tires: "Front 80/100-19 Rear 110/90-16 Tires",
+//   //absorber: "Front suspension fork",
+//   maxSpeed: "100 Km/h",
+//   loadCapacity: "150 Kg",
+//   chargingTime: "6-8 hours",
+//   //optionalColors: ["Blue", "Red", "Navy", "Grey"],
+//   packagingSize: "2000 x 800 x 1200 mm",
+//   //containerQty: "45 units",
+//   warranty: "One-year replacement for non-human damage"
+//   },
+//   batteryOptions: [
+//   { type: "Lithium", capacity: "72V 50Ah", price: 310000 },
+//   // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+//   // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+//   ],
+//   stock: 15,
+//   bestSeller: true,
+//   range: 80,
+//   maxSpeed: 100,
+//   chargingTime: 7
+// },
 
-{
-  id: 13,
-  name: "M005",
-  category: "electric-motorcycles",
-  basePrice: 190000,
-  rating: 4.8,
-  image: "Images/mobility/M005.webp",
-  description: "High-performance electric Motorcycle with robust design and premium components.",
-  features: [
-  "2000W high-power motor",
-  // "All-terrain fat tires",
-  // "Premium suspension system",
-  // "LED headlight and display"
-  ],
-  specs: {
-  weight: "108.5 Kg",
-  dimensions: "1800 * 800 * 1070 mm",
-  motor: "2000W",
-  battery: "72V 20Ah",
-  tires: "120-70-12 Tires",
-  //absorber: "Front suspension fork",
-  maxSpeed: "90 Km/h",
-  loadCapacity: "180 Kg",
-  chargingTime: "6-8 hours",
-  //optionalColors: ["White,Black,Gray,Green,Chameleon, Blue"],
-  packagingSize: "1650 x 500 x 800 mm",
-  //containerQty: "45 units",
-  warranty: "One-year replacement for non-human damage"
-  },
-  batteryOptions: [
-  { type: "Lead Acid", capacity: "72V 20Ah", price: 190000 },
-  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
-  ],
-  stock: 15,
-  bestSeller: true,
-  range: 70,
-  maxSpeed: 90,
-  chargingTime: 7
-},
+// {
+//   id: 13,
+//   name: "M005",
+//   category: "electric-motorcycles",
+//   basePrice: 190000,
+//   rating: 4.8,
+//   image: "Images/mobility/M005.webp",
+//   description: "High-performance electric Motorcycle with robust design and premium components.",
+//   features: [
+//   "2000W high-power motor",
+//   // "All-terrain fat tires",
+//   // "Premium suspension system",
+//   // "LED headlight and display"
+//   ],
+//   specs: {
+//   weight: "108.5 Kg",
+//   dimensions: "1800 * 800 * 1070 mm",
+//   motor: "2000W",
+//   battery: "72V 20Ah",
+//   tires: "120-70-12 Tires",
+//   //absorber: "Front suspension fork",
+//   maxSpeed: "90 Km/h",
+//   loadCapacity: "180 Kg",
+//   chargingTime: "6-8 hours",
+//   //optionalColors: ["White,Black,Gray,Green,Chameleon, Blue"],
+//   packagingSize: "1650 x 500 x 800 mm",
+//   //containerQty: "45 units",
+//   warranty: "One-year replacement for non-human damage"
+//   },
+//   batteryOptions: [
+//   { type: "Lead Acid", capacity: "72V 20Ah", price: 190000 },
+//   // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+//   // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+//   ],
+//   stock: 15,
+//   bestSeller: true,
+//   range: 70,
+//   maxSpeed: 90,
+//   chargingTime: 7
+// },
 
-{
-  id: 14,
-  name: "M006",
-  category: "electric-motorcycles",
-  basePrice: 280000,
-  rating: 4.8,
-  image: "Images/mobility/M006.webp",
-  description: "High-performance electric Motorcycle with robust design and premium components.",
-  features: [
-  "3000W high-power motor",
-  // "All-terrain fat tires",
-  // "Premium suspension system",
-  // "LED headlight and display"
-  ],
-  specs: {
-  weight: "140 Kg",
-  dimensions: "1950 * 570 * 840 mm",
-  motor: "3000W",
-  battery: "72V 32Ah",
-  //tires: "Front 80/100-19 Rear 110/90-16 Tires",
-  //absorber: "Front suspension fork",
-  maxSpeed: "90 Km/h",
-  loadCapacity: "200 Kg",
-  chargingTime: "6-8 hours",
-  //optionalColors: ["Blue,white", "White,Black,Red,Chameleon", "White"],
-  packagingSize: "2000 x 800 x 1200 mm",
-  //containerQty: "45 units",
-  warranty: "One-year replacement for non-human damage"
-  },
-  batteryOptions: [
-  { type: "Lead Acid", capacity: "72V 32Ah", price: 280000 },
-  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
-  ],
-  stock: 15,
-  bestSeller: true,
-  range: 100,
-  maxSpeed: 90,
-  chargingTime: 7
-},
+// {
+//   id: 14,
+//   name: "M006",
+//   category: "electric-motorcycles",
+//   basePrice: 280000,
+//   rating: 4.8,
+//   image: "Images/mobility/M006.webp",
+//   description: "High-performance electric Motorcycle with robust design and premium components.",
+//   features: [
+//   "3000W high-power motor",
+//   // "All-terrain fat tires",
+//   // "Premium suspension system",
+//   // "LED headlight and display"
+//   ],
+//   specs: {
+//   weight: "140 Kg",
+//   dimensions: "1950 * 570 * 840 mm",
+//   motor: "3000W",
+//   battery: "72V 32Ah",
+//   //tires: "Front 80/100-19 Rear 110/90-16 Tires",
+//   //absorber: "Front suspension fork",
+//   maxSpeed: "90 Km/h",
+//   loadCapacity: "200 Kg",
+//   chargingTime: "6-8 hours",
+//   //optionalColors: ["Blue,white", "White,Black,Red,Chameleon", "White"],
+//   packagingSize: "2000 x 800 x 1200 mm",
+//   //containerQty: "45 units",
+//   warranty: "One-year replacement for non-human damage"
+//   },
+//   batteryOptions: [
+//   { type: "Lead Acid", capacity: "72V 32Ah", price: 280000 },
+//   // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+//   // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+//   ],
+//   stock: 15,
+//   bestSeller: true,
+//   range: 100,
+//   maxSpeed: 90,
+//   chargingTime: 7
+// },
 
-{
-  id: 15,
-  name: "M008",
-  category: "electric-motorcycles",
-  basePrice: 125000,
-  rating: 4.8,
-  image: "Images/mobility/M008.webp",
-  description: "High-performance electric Motorcycle with robust design and premium components.",
-  features: [
-  "1000W high-power motor",
-  // "All-terrain fat tires",
-  // "Premium suspension system",
-  // "LED headlight and display"
-  ],
-  specs: {
-  weight: "70 Kg",
-  dimensions: "1950 * 670 * 1100 mm",
-  motor: "1000W",
-  battery: "60V 20Ah",
-  tires: "2.75 -10 Tires",
-  //absorber: "Front suspension fork",
-  maxSpeed: "60 Km/h",
-  loadCapacity: "120 Kg",
-  chargingTime: "6-8 hours",
-  //optionalColors: ["Blue,white", "White"],
-  packagingSize: "1600 x 350 x 900 mm",
-  //containerQty: "45 units",
-  warranty: "One-year replacement for non-human damage"
-  },
-  batteryOptions: [
-  { type: "Lead Acid", capacity: "72V 60Ah", price: 125000 },
-  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
-  ],
-  stock: 15,
-  bestSeller: true,
-  range: 50,
-  maxSpeed: 90,
-  chargingTime: 7
-},
+// {
+//   id: 15,
+//   name: "M008",
+//   category: "electric-motorcycles",
+//   basePrice: 125000,
+//   rating: 4.8,
+//   image: "Images/mobility/M008.webp",
+//   description: "High-performance electric Motorcycle with robust design and premium components.",
+//   features: [
+//   "1000W high-power motor",
+//   // "All-terrain fat tires",
+//   // "Premium suspension system",
+//   // "LED headlight and display"
+//   ],
+//   specs: {
+//   weight: "70 Kg",
+//   dimensions: "1950 * 670 * 1100 mm",
+//   motor: "1000W",
+//   battery: "60V 20Ah",
+//   tires: "2.75 -10 Tires",
+//   //absorber: "Front suspension fork",
+//   maxSpeed: "60 Km/h",
+//   loadCapacity: "120 Kg",
+//   chargingTime: "6-8 hours",
+//   //optionalColors: ["Blue,white", "White"],
+//   packagingSize: "1600 x 350 x 900 mm",
+//   //containerQty: "45 units",
+//   warranty: "One-year replacement for non-human damage"
+//   },
+//   batteryOptions: [
+//   { type: "Lead Acid", capacity: "72V 60Ah", price: 125000 },
+//   // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+//   // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+//   ],
+//   stock: 15,
+//   bestSeller: true,
+//   range: 50,
+//   maxSpeed: 90,
+//   chargingTime: 7
+// },
 
-{
-  id: 16,
-  name: "NM02",
-  category: "electric-motorcycles",
-  basePrice: 170000,
-  rating: 4.8,
-  image: "Images/mobility/NM02.webp",
-  description: "High-performance electric Motorcycle with robust design and premium components.",
-  features: [
-  "1200W high-power motor",
-  // "All-terrain fat tires",
-  // "Premium suspension system",
-  // "LED headlight and display"
-  ],
-  specs: {
-  weight: "80 Kg",
-  dimensions: "2000 * 830 * 1100 mm",
-  motor: "1200W",
-  battery: "62V 58Ah",
-  tires: "2.75-10 Tires",
-  //absorber: "Front suspension fork",
-  maxSpeed: "45 Km/h",
-  loadCapacity: "500 Kg",
-  chargingTime: "6-8 hours",
-  //optionalColors: ["Black", "Grey"],
-  packagingSize: "2000 x 900 x 1200 mm",
-  //containerQty: "45 units",
-  warranty: "One-year replacement for non-human damage"
-  },
-  batteryOptions: [
-  { type: "Lead Acid", capacity: "62V 58Ah", price: 170000},
-  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
-  ],
-  stock: 15,
-  bestSeller: true,
-  range: 60,
-  maxSpeed: 45,
-  chargingTime: 7
-},
+// {
+//   id: 16,
+//   name: "NM02",
+//   category: "electric-motorcycles",
+//   basePrice: 170000,
+//   rating: 4.8,
+//   image: "Images/mobility/NM02.webp",
+//   description: "High-performance electric Motorcycle with robust design and premium components.",
+//   features: [
+//   "1200W high-power motor",
+//   // "All-terrain fat tires",
+//   // "Premium suspension system",
+//   // "LED headlight and display"
+//   ],
+//   specs: {
+//   weight: "80 Kg",
+//   dimensions: "2000 * 830 * 1100 mm",
+//   motor: "1200W",
+//   battery: "62V 58Ah",
+//   tires: "2.75-10 Tires",
+//   //absorber: "Front suspension fork",
+//   maxSpeed: "45 Km/h",
+//   loadCapacity: "500 Kg",
+//   chargingTime: "6-8 hours",
+//   //optionalColors: ["Black", "Grey"],
+//   packagingSize: "2000 x 900 x 1200 mm",
+//   //containerQty: "45 units",
+//   warranty: "One-year replacement for non-human damage"
+//   },
+//   batteryOptions: [
+//   { type: "Lead Acid", capacity: "62V 58Ah", price: 170000},
+//   // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+//   // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+//   ],
+//   stock: 15,
+//   bestSeller: true,
+//   range: 60,
+//   maxSpeed: 45,
+//   chargingTime: 7
+// },
 
-{
-  id: 17,
-  name: "NM03",
-  category: "electric-motorcycles",
-  basePrice: 200000,
-  rating: 4.8,
-  image: "Images/mobility/NM03.webp",
-  description: "High-performance electric Motorcycle with robust design and premium components.",
-  features: [
-  "1200W Differential motor",
-  // "All-terrain fat tires",
-  // "Premium suspension system",
-  // "LED headlight and display"
-  ],
-  specs: {
-  weight: "80 Kg",
-  dimensions: "2000 * 900 * 1100 mm",
-  motor: "1200W",
-  battery: "62V 58Ah",
-  tires: "2.75-10 Tires",
-  //absorber: "Front suspension fork",
-  maxSpeed: "45 Km/h",
-  loadCapacity: "500 Kg",
-  chargingTime: "6-8 hours",
-  //optionalColors: ["Black", "Grey"],
-  packagingSize: "2000 x 1000 x 1200 mm",
-  //containerQty: "45 units",
-  warranty: "One-year replacement for non-human damage"
-  },
-  batteryOptions: [
-  { type: "Lithium", capacity: "62V 58Ah", price: 200000 },
-  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
-  ],
-  stock: 15,
-  bestSeller: true,
-  range: 60,
-  maxSpeed: 45,
-  chargingTime: 7
-},
+// {
+//   id: 17,
+//   name: "NM03",
+//   category: "electric-motorcycles",
+//   basePrice: 200000,
+//   rating: 4.8,
+//   image: "Images/mobility/NM03.webp",
+//   description: "High-performance electric Motorcycle with robust design and premium components.",
+//   features: [
+//   "1200W Differential motor",
+//   // "All-terrain fat tires",
+//   // "Premium suspension system",
+//   // "LED headlight and display"
+//   ],
+//   specs: {
+//   weight: "80 Kg",
+//   dimensions: "2000 * 900 * 1100 mm",
+//   motor: "1200W",
+//   battery: "62V 58Ah",
+//   tires: "2.75-10 Tires",
+//   //absorber: "Front suspension fork",
+//   maxSpeed: "45 Km/h",
+//   loadCapacity: "500 Kg",
+//   chargingTime: "6-8 hours",
+//   //optionalColors: ["Black", "Grey"],
+//   packagingSize: "2000 x 1000 x 1200 mm",
+//   //containerQty: "45 units",
+//   warranty: "One-year replacement for non-human damage"
+//   },
+//   batteryOptions: [
+//   { type: "Lithium", capacity: "62V 58Ah", price: 200000 },
+//   // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+//   // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+//   ],
+//   stock: 15,
+//   bestSeller: true,
+//   range: 60,
+//   maxSpeed: 45,
+//   chargingTime: 7
+// },
 
-{
-  id: 18,
-  name: "S001",
-  category: "electric-scooters",
-  basePrice: 150000,
-  rating: 4.8,
-  image: "Images/mobility/S001.webp",
-  description: "High-performance electric scooters with robust design and premium components.",
-  features: [
-  "500W",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
-  ],
-  specs: {
-  weight: "23.5 Kg",
-  dimensions: "1200 * 220 * 1160 mm",
-  motor: "500W",
-  battery: "48V 12Ah Lithium",
-  tires: "10`` Pneumatic",
-  //absorber: "Front suspension fork",
-  maxSpeed: "50 Km/h",
-  loadCapacity: "100 Kg",
-  chargingTime: "3-4 hours",
-  //optionalColors: ["Blue", "Green", "Red", "Purple", "Turquoise"],
-  packagingSize: "1230 x 260 x 585 mm",
-  //containerQty: "45 units",
-  warranty: "One-year replacement for non-human damage"
-  },
-  batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
-  ],
-  stock: 15,
-  bestSeller: true,
-  range: 60,
-  maxSpeed: 50,
-  chargingTime: 3
-},
+// {
+//   id: 18,
+//   name: "S001",
+//   category: "electric-scooters",
+//   basePrice: 150000,
+//   rating: 4.8,
+//   image: "Images/mobility/S001.webp",
+//   description: "High-performance electric scooters with robust design and premium components.",
+//   features: [
+//   "500W",
+//   "All-terrain fat tires",
+//   "Premium suspension system",
+//   "LED headlight and display"
+//   ],
+//   specs: {
+//   weight: "23.5 Kg",
+//   dimensions: "1200 * 220 * 1160 mm",
+//   motor: "500W",
+//   battery: "48V 12Ah Lithium",
+//   tires: "10`` Pneumatic",
+//   //absorber: "Front suspension fork",
+//   maxSpeed: "50 Km/h",
+//   loadCapacity: "100 Kg",
+//   chargingTime: "3-4 hours",
+//   //optionalColors: ["Blue", "Green", "Red", "Purple", "Turquoise"],
+//   packagingSize: "1230 x 260 x 585 mm",
+//   //containerQty: "45 units",
+//   warranty: "One-year replacement for non-human damage"
+//   },
+//   batteryOptions: [
+//   { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
+//   { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+//   { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+//   ],
+//   stock: 15,
+//   bestSeller: true,
+//   range: 60,
+//   maxSpeed: 50,
+//   chargingTime: 3
+// },
 
-{
-  id: 19,
-  name: "S002",
-  category: "electric-scooters",
-  basePrice: 90000,
-  rating: 4.8,
-  image: "Images/mobility/S002.webp",
-  description: "High-performance electric scooters with robust design and premium components.",
-  features: [
-  "350W",
-  "All-terrain fat tires",
-  "Premium suspension system",
-  "LED headlight and display"
-  ],
-  specs: {
-  weight: "15 Kg",
-  dimensions: "	1090 * 470 * 1180 mm",
-  motor: "350W",
-  battery: "36V 10Ah Lithium",
-  tires: "8`` Pneumatic",
-  //absorber: "Front suspension fork",
-  maxSpeed: "30 Km/h",
-  loadCapacity: "100 Kg",
-  chargingTime: "3-4 hours",
-  //optionalColors: ["Black"],
-  packagingSize: "1100 x 180 x 490 mm",
-  //containerQty: "45 units",
-  warranty: "One-year replacement for non-human damage"
-  },
-  batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
-  { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
-  ],
-  stock: 15,
-  bestSeller: true,
-  range: 35,
-  maxSpeed: 50,
-  chargingTime: 3
-},
+// {
+//   id: 19,
+//   name: "S002",
+//   category: "electric-scooters",
+//   basePrice: 90000,
+//   rating: 4.8,
+//   image: "Images/mobility/S002.webp",
+//   description: "High-performance electric scooters with robust design and premium components.",
+//   features: [
+//   "350W",
+//   "All-terrain fat tires",
+//   "Premium suspension system",
+//   "LED headlight and display"
+//   ],
+//   specs: {
+//   weight: "15 Kg",
+//   dimensions: "	1090 * 470 * 1180 mm",
+//   motor: "350W",
+//   battery: "36V 10Ah Lithium",
+//   tires: "8`` Pneumatic",
+//   //absorber: "Front suspension fork",
+//   maxSpeed: "30 Km/h",
+//   loadCapacity: "100 Kg",
+//   chargingTime: "3-4 hours",
+//   //optionalColors: ["Black"],
+//   packagingSize: "1100 x 180 x 490 mm",
+//   //containerQty: "45 units",
+//   warranty: "One-year replacement for non-human damage"
+//   },
+//   batteryOptions: [
+//   { type: "Lithium", capacity: "72V 60Ah", price: 393000 },
+//   { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+//   { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+//   ],
+//   stock: 15,
+//   bestSeller: true,
+//   range: 35,
+//   maxSpeed: 50,
+//   chargingTime: 3
+// },
 
 {
   id: 20,
   name: "S003",
   category: "electric-scooters",
-  basePrice: 80000,
+  basePrice: 120000,
   rating: 4.8,
   image: "Images/mobility/S003.webp",
   description: "High-performance electric scooters with robust design and premium components.",
@@ -1359,7 +1359,7 @@ export const mobilityProducts: MobilityProduct[] = [
   warranty: "One-year replacement for non-human damage"
   },
   batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 90000 },
+  { type: "Lithium", capacity: "72V 60Ah", price: 120000 },
   // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
   // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
   ],
@@ -1370,46 +1370,46 @@ export const mobilityProducts: MobilityProduct[] = [
   chargingTime: 3
 },
 
-{
-  id: 21,
-  name: "S004",
-  category: "electric-scooters",
-  basePrice: 140000,
-  rating: 4.8,
-  image: "Images/mobility/S004.webp",
-  description: "High-performance electric scooters with robust design and premium components.",
-  features: [
-  "350W",
-  // "All-terrain fat tires",
-  // "Premium suspension system",
-  // "LED headlight and display"
-  ],
-  specs: {
-  weight: "10 Kg",
-  dimensions: "1000 * 930 * 240 mm",
-  motor: "350W",
-  battery: "48V 12Ah Lithium",
-  tires: "10*2.5 Tires",
-  //absorber: "Front suspension fork",
-  maxSpeed: "30 Km/h",
-  loadCapacity: "100 Kg",
-  chargingTime: "3-4 hours",
-  //optionalColors: ["Black"],
-  packagingSize: "1050 x 235 x 530 mm",
-  //containerQty: "45 units",
-  warranty: "One-year replacement for non-human damage"
-  },
-  batteryOptions: [
-  { type: "Lithium", capacity: "72V 60Ah", price: 140000 },
-  // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
-  // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
-  ],
-  stock: 15,
-  bestSeller: true,
-  range: 40,
-  maxSpeed: 30,
-  chargingTime: 3
-},
+// {
+//   id: 21,
+//   name: "S004",
+//   category: "electric-scooters",
+//   basePrice: 140000,
+//   rating: 4.8,
+//   image: "Images/mobility/S004.webp",
+//   description: "High-performance electric scooters with robust design and premium components.",
+//   features: [
+//   "350W",
+//   // "All-terrain fat tires",
+//   // "Premium suspension system",
+//   // "LED headlight and display"
+//   ],
+//   specs: {
+//   weight: "10 Kg",
+//   dimensions: "1000 * 930 * 240 mm",
+//   motor: "350W",
+//   battery: "48V 12Ah Lithium",
+//   tires: "10*2.5 Tires",
+//   //absorber: "Front suspension fork",
+//   maxSpeed: "30 Km/h",
+//   loadCapacity: "100 Kg",
+//   chargingTime: "3-4 hours",
+//   //optionalColors: ["Black"],
+//   packagingSize: "1050 x 235 x 530 mm",
+//   //containerQty: "45 units",
+//   warranty: "One-year replacement for non-human damage"
+//   },
+//   batteryOptions: [
+//   { type: "Lithium", capacity: "72V 60Ah", price: 140000 },
+//   // { type: "Lithium", capacity: "72V 100Ah", price: 463000 },
+//   // { type: "Lithium", capacity: "72V 140Ah", price: 492000 }
+//   ],
+//   stock: 15,
+//   bestSeller: true,
+//   range: 40,
+//   maxSpeed: 30,
+//   chargingTime: 3
+// },
 
 ];
 

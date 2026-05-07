@@ -72,7 +72,7 @@ const About = () => {
             </div>
           </div>
           
-          <div className="mb-16">
+          {/* <div className="mb-16">
             <h2 className="text-2xl font-bold text-green-600 mb-6">Our Team</h2>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="bg-white p-4 rounded-lg border text-center shadow-sm">
@@ -104,8 +104,77 @@ const About = () => {
                 <p className="text-green-600 text-sm">Finance Director</p>
               </div>
             </div>
+          </div> */}
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold text-green-600 mb-6">Our Team</h2>
+
+            <div className="relative">
+              {/* Scroll Container */}
+              <div className="flex gap-6 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory">
+                
+                {[
+                  {
+                    name: "Mesafint Belachew",
+                    role: "Founder & CEO",
+                    image: "/Images/Team/mesafint.jpg",
+                  },
+                  {
+                    name: "Daneal",
+                    role: "Technical Director",
+                    image: "/Images/Team/tech-director.jpg",
+                  },
+                  {
+                    name: "Fisha Belachew",
+                    role: "Operations Manager",
+                    image: "/Images/Team/operations.jpg",
+                  },
+                  {
+                    name: "Hiwot",
+                    role: "Finance Director",
+                    image: "/Images/Team/finance.jpg",
+                  },
+                  // {
+                  //   name: "Name Here",
+                  //   role: "Marketing Lead",
+                  //   image: "/Images/Team/marketing.jpg",
+                  // },
+                  // {
+                  //   name: "Name Here",
+                  //   role: "Product Manager",
+                  //   image: "/Images/Team/product.jpg",
+                  // },
+                  // {
+                  //   name: "Name Here",
+                  //   role: "Partnerships Manager",
+                  //   image: "/Images/Team/partnerships.jpg",
+                  // },
+                ].map((member, index) => (
+                  <div
+                    key={index}
+                    className="min-w-[250px] bg-white p-4 rounded-lg border text-center shadow-sm snap-start"
+                  >
+                    <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 border-2 border-green-600/30">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900">
+                      {member.name}
+                    </h3>
+                    <p className="text-green-600 text-sm">{member.role}</p>
+                  </div>
+                ))}
+              </div>
+
+                  {/* Optional Scroll Hint */}
+                  <p className="text-sm text-gray-500 mt-2 text-center">
+                    ← Scroll to see more →
+                  </p>
+                </div>
+              </div>
           </div>
-        </div>
         
         <PartnersSection />
       </main>
