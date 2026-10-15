@@ -29,7 +29,7 @@ const Index = () => {
 
       <AboutSnippet />
       
-      <CategoryShowcase />
+      {/* <CategoryShowcase /> */}
 
       <ProjectHighlight />
 
@@ -39,7 +39,7 @@ const Index = () => {
 
       <QuickLinksSection />
 
-      <PartnersSection />
+      {/* <PartnersSection /> */}
 
       <NewsletterSection />
       

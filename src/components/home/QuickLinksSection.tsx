@@ -1,85 +1,96 @@
 
 import { Link } from "react-router-dom";
+import { ArrowRight, CarFront, Sun } from "lucide-react";
 
 const QuickLinksSection = () => {
   const services = [
     {
       title: "Electric Mobility",
-      description: "Explore eco-friendly electric bikes and scooters",
+      description:
+        "Discover electric tricycles and sustainable transport solutions for individuals and businesses.",
       link: "/mobility",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-      ),
-      bgColor: "bg-green-100",
-      hoverBgColor: "group-hover:bg-green-200",
-      textColor: "text-green-600",
-      hoverTextColor: "group-hover:text-green-700"
-    },
-    {
-      title: "Power Stations",
-      description: "Portable power solutions for all your energy needs",
-      link: "/power-stations",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-      ),
-      bgColor: "bg-green-100",
-      hoverBgColor: "group-hover:bg-green-200",
-      textColor: "text-green-600",
-      hoverTextColor: "group-hover:text-green-700"
-    },
-    {
-      title: "RFID Card Refill",
-      description: "Quick and easy card refill services",
-      link: "/card-refill",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-        </svg>
-      ),
-      bgColor: "bg-blue-100",
-      hoverBgColor: "group-hover:bg-blue-200",
-      textColor: "text-green-600",
-      hoverTextColor: "group-hover:text-blue-600"
+      label: "Explore Our Vehicles",
+      icon: CarFront,
     },
     {
       title: "Solar Consultation",
-      description: "Get personalized solar system design and consultation",
+      description:
+        "Get expert guidance and a tailored solar system design for your home, business, or project.",
       link: "/consultation",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-        </svg>
-      ),
-      bgColor: "bg-green-100",
-      hoverBgColor: "group-hover:bg-green-200",
-      textColor: "text-green-600",
-      hoverTextColor: "group-hover:text-green-700"
-    }
+      label: "Plan Your Solar System",
+      icon: Sun,
+    },
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-green-600 mb-8">Explore Our Services</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {services.map((service, index) => (
-            <Link key={index} to={service.link} className="group">
-              <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 text-center">
-                <div className={`w-16 h-16 mx-auto mb-4 ${service.bgColor} rounded-full flex items-center justify-center ${service.hoverBgColor} transition-colors duration-300`}>
-                  {service.icon}
+    <section className="relative overflow-hidden bg-gray-50 py-20 md:py-24">
+      {/* Subtle decorative background */}
+      <div className="pointer-events-none absolute -right-24 top-0 h-72 w-72 rounded-full bg-green-100/60 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-24 left-0 h-72 w-72 rounded-full bg-emerald-100/50 blur-3xl" />
+
+      <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section heading */}
+        <div className="mx-auto mb-12 max-w-2xl text-center md:mb-14">
+          <span className="inline-flex items-center gap-2 rounded-full border border-green-200 bg-white px-4 py-2 text-sm font-semibold text-green-800">
+            <span className="h-2 w-2 rounded-full bg-green-600" />
+            HOW WE CAN HELP
+          </span>
+
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-gray-950 sm:text-4xl lg:text-5xl">
+            Explore Our
+            <span className="text-green-700"> Solutions</span>
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-gray-600 sm:text-lg">
+            Practical solutions for cleaner transportation and reliable solar
+            energy, designed around your needs.
+          </p>
+        </div>
+
+        {/* Service cards */}
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
+          {services.map((service, index) => {
+            const Icon = service.icon;
+
+            return (
+              <Link
+                key={service.title}
+                to={service.link}
+                className="group flex h-full flex-col rounded-2xl border border-gray-200/80 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-green-300 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-4 sm:p-9 lg:p-10"
+              >
+                {/* Icon and number */}
+                <div className="flex items-start justify-between">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-green-50 text-green-700 transition-colors duration-300 group-hover:bg-green-700 group-hover:text-white">
+                    <Icon size={32} strokeWidth={1.7} />
+                  </div>
+
+                  <span className="text-sm font-semibold tracking-widest text-gray-300">
+                    0{index + 1}
+                  </span>
                 </div>
-                <h3 className={`text-xl font-semibold mb-2 ${service.textColor} ${service.hoverTextColor} transition-colors duration-300`}>
+
+                {/* Card content */}
+                <h3 className="mt-7 text-2xl font-bold text-gray-950 transition-colors duration-300 group-hover:text-green-800 sm:text-3xl">
                   {service.title}
                 </h3>
-                <p className="text-gray-600">{service.description}</p>
-              </div>
-            </Link>
-          ))}
+
+                <p className="mt-3 flex-grow text-base leading-7 text-gray-600">
+                  {service.description}
+                </p>
+
+                {/* Link action */}
+                <div className="mt-8 flex items-center justify-between border-t border-gray-100 pt-5">
+                  <span className="font-semibold text-green-800">
+                    {service.label}
+                  </span>
+
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-green-50 text-green-700 transition-all duration-300 group-hover:translate-x-1 group-hover:bg-green-700 group-hover:text-white">
+                    <ArrowRight size={20} />
+                  </span>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

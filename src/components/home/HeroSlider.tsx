@@ -1,76 +1,122 @@
 
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
+const slides = [
+  {
+    id: 1,
+    eyebrow: "CLEAN ENERGY SOLUTIONS",
+    title: "Solar Design & Consultation",
+    description:
+      "Get a solar system designed around your energy needs, budget, and daily consumption.",
+    image:
+      "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2000&q=85",
+    ctaText: "Get Consultation",
+    ctaLink: "/consultation",
+    imagePosition: "center",
+  },
+  {
+    id: 2,
+    eyebrow: "SUSTAINABLE TRANSPORTATION",
+    title: "Discover Electric Mobility",
+    description:
+      "Explore practical electric tricycles, bikes, and scooters for a cleaner journey.",
+    image: "/Images/mobility/A0.webp",
+    ctaText: "Explore Mobility",
+    ctaLink: "/mobility",
+    imagePosition: "center",
+  },
+];
+
 const HeroSlider = () => {
-  // Editable slides - you can customize both images and text for each slide
-  const slides = [
-    {
-      id: 1,
-      title: "Solar Design & Consultation",
-      description: "Get personalized solar system design tailored to your energy needs",
-      image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-      ctaText: "Get Consultation",
-      ctaLink: "/consultation"
-    },
-    {
-      id: 2,
-      title: "Electric Mobility",
-      description: "Explore our range of eco-friendly Electric Bikes, Tricycles and Scooters",
-      image: "Images/mobility/A0.webp",
-      ctaText: "Explore Mobility",
-      ctaLink: "/mobility"
-    },
-    {
-      id: 3,
-      title: "Portable Power Stations",
-      description: "Reliable power solutions for your adventures and backup needs",
-      image: "Images/slides/Ecoflow.webp",
-      ctaText: "Shop Power Stations",
-      ctaLink: "/power-stations"
-    },
-    {
-      id: 4,
-      title: "RFID Card Refill",
-      description: "Fast Card refilling service for Ethiopian Electric Utility customers in Addis Ababa",
-      image: "Images/slides/RFID.webp",
-      ctaText: "Refill Card",
-      ctaLink: "/card-refill"
-    }
-  ];
+  const [api, setApi] = useState<CarouselApi>();
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+
+    const updateActiveSlide = () => {
+      setActiveIndex(api.selectedScrollSnap());
+    };
+
+    updateActiveSlide();
+    api.on("select", updateActiveSlide);
+
+    return () => {
+      api.off("select", updateActiveSlide);
+    };
+  }, [api]);
 
   return (
-    <section className="relative w-full">
-      <Carousel className="w-full">
-        <CarouselContent>
+    <section
+      aria-label="Featured Lion Green Solution services"
+      className="relative w-full overflow-hidden bg-white"
+    >
+      <Carousel
+        setApi={setApi}
+        opts={{ loop: true }}
+        className="w-full"
+      >
+        <CarouselContent className="ml-0">
           {slides.map((slide) => (
-            <CarouselItem key={slide.id}>
-              <div className="relative h-[500px] md:h-[600px] overflow-hidden">
-                {/* Background Image - Natural without overlay */}
-                <div 
-                  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                  style={{ backgroundImage: `url(${slide.image})` }}
+            <CarouselItem key={slide.id} className="pl-0">
+              <div className="relative isolate flex min-h-[460px] items-center overflow-hidden sm:min-h-[520px] lg:min-h-[600px]">
+                {/* Background image */}
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 -z-20 bg-cover bg-center bg-no-repeat"
+                  style={{
+                    backgroundImage: `url("${slide.image}")`,
+                    backgroundPosition: slide.imagePosition,
+                  }}
                 />
-                
-                {/* Content with subtle backdrop */}
-                <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
-                  <div className="max-w-2xl">
-                    {/* Text container with subtle backdrop */}
-                    <div className="bg-black bg-opacity-40 backdrop-blur-sm rounded-lg p-6 md:p-8">
-                      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white animate-fade-in">
-                        {slide.title}
-                      </h1>
-                      <p className="text-base md:text-lg mb-6 text-gray-100 animate-fade-in">
-                        {slide.description}
-                      </p>
-                      <Link to={slide.ctaLink}>
-                        <Button size="lg" className="bg-sunbeam-400 hover:bg-sunbeam-500 text-navy-900 font-semibold animate-fade-in">
+
+                {/* Soft gradient keeps the text readable */}
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 -z-10 bg-gradient-to-r from-white/95 via-white/80 to-white/10 sm:from-white/95 sm:via-white/75 sm:to-transparent"
+                />
+
+                {/* Slide content */}
+                <div className="container mx-auto w-full px-6 py-16 sm:px-10 lg:px-16">
+                  <div className="max-w-xl lg:max-w-2xl">
+                    <p className="mb-5 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-emerald-700 sm:text-sm">
+                      <span className="h-0.5 w-8 bg-emerald-600" />
+                      {slide.eyebrow}
+                    </p>
+
+                    <h1 className="max-w-2xl text-4xl font-bold leading-tight tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+                      {slide.title}
+                    </h1>
+
+                    <p className="mt-5 max-w-lg text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
+                      {slide.description}
+                    </p>
+
+                    <div className="mt-8">
+                      <Button
+                        asChild
+                        size="lg"
+                        className="group h-12 rounded-md bg-emerald-700 px-6 font-semibold text-white transition-colors hover:bg-emerald-800"
+                      >
+                        <Link to={slide.ctaLink}>
                           {slide.ctaText}
-                          <ArrowRight size={18} className="ml-2" />
-                        </Button>
-                      </Link>
+                          <ArrowRight
+                            size={18}
+                            className="ml-2 transition-transform group-hover:translate-x-1"
+                          />
+                        </Link>
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -78,14 +124,28 @@ const HeroSlider = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="left-4 bg-white bg-opacity-80 hover:bg-opacity-100" />
-        <CarouselNext className="right-4 bg-white bg-opacity-80 hover:bg-opacity-100" />
+
+        {/* Navigation arrows */}
+        <CarouselPrevious className="left-3 h-10 w-10 border-0 bg-white/90 text-slate-900 shadow-sm hover:bg-white sm:left-6 lg:left-8" />
+
+        <CarouselNext className="right-3 h-10 w-10 border-0 bg-white/90 text-slate-900 shadow-sm hover:bg-white sm:right-6 lg:right-8" />
       </Carousel>
-      
-      {/* Slide Indicators */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {slides.map((_, index) => (
-          <div key={index} className="w-3 h-3 bg-white bg-opacity-70 rounded-full hover:bg-opacity-100 transition-all cursor-pointer" />
+
+      {/* Interactive slide indicators */}
+      <div className="absolute bottom-5 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2">
+        {slides.map((slide, index) => (
+          <button
+            key={slide.id}
+            type="button"
+            aria-label={`Go to slide ${index + 1}: ${slide.title}`}
+            aria-current={activeIndex === index ? "true" : undefined}
+            onClick={() => api?.scrollTo(index)}
+            className={`h-2.5 rounded-full transition-all duration-300 ${
+              activeIndex === index
+                ? "w-8 bg-emerald-700"
+                : "w-2.5 bg-slate-500/50 hover:bg-slate-700/70"
+            }`}
+          />
         ))}
       </div>
     </section>
