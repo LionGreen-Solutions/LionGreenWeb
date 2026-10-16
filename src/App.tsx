@@ -23,6 +23,7 @@ import SolarConsultation from "./pages/SolarConsultation";
 import CustomerDataCollection from "./pages/CustomerDataCollection";
 import DesignResults from "./pages/DesignResults";
 import NotFound from "./pages/NotFound";
+import AccountDeletion from "./pages/AccountDeletion";
 
 const queryClient = new QueryClient();
 
@@ -53,6 +54,7 @@ function App() {
               <Route path="/customer-data" element={<CustomerDataCollection />} />
               <Route path="/design-results" element={<DesignResults />} />
               <Route path="*" element={<NotFound />} />
+              <Route path="/delete-account" element={<AccountDeletion />} />
             </Routes>
           </BrowserRouter>
         </TooltipProvider>
