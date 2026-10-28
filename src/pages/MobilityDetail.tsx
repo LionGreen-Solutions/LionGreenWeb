@@ -1,4 +1,5 @@
 
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { mobilityProducts } from "@/lib/mobilityData";
 import Navbar from "@/components/Navbar";
@@ -39,9 +40,25 @@ const formatValue = (value: unknown): string => {
   return String(value);
 };
 
+const getImagePath = (image: string) => {
+  const path = image.trim().replace(/\\/g, "/");
+
+  // Keep external image URLs unchanged.
+  if (/^(https?:)?\/\//i.test(path) || path.startsWith("data:")) {
+    return path;
+  }
+
+  // Normalize local public-folder paths.
+  return `/${path.replace(/^\/+/, "").replace(/^public\//i, "")}`;
+};
+
 const MobilityDetail = () => {
   const { id } = useParams();
-  const product = mobilityProducts.find((item) => item.id === Number(id));
+  const [imageFailed, setImageFailed] = useState(false);
+
+  const product = mobilityProducts.find(
+    (item) => String(item.id) === id
+  );
 
   if (!product) {
     return (
@@ -53,12 +70,15 @@ const MobilityDetail = () => {
             <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-800">
               <Bike size={32} />
             </div>
+
             <h1 className="mt-6 text-2xl font-bold text-slate-950">
               Product not found
             </h1>
+
             <p className="mt-3 text-sm leading-6 text-slate-600">
               This vehicle may be unavailable or the link may be incorrect.
             </p>
+
             <Link
               to="/mobility"
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-emerald-800 px-6 py-3 text-sm font-semibold text-white transition hover:bg-emerald-900"
@@ -73,6 +93,8 @@ const MobilityDetail = () => {
       </div>
     );
   }
+
+  const imagePath = getImagePath(product.image);
 
   return (
     <div className="flex min-h-screen flex-col bg-white">
@@ -103,13 +125,37 @@ const MobilityDetail = () => {
                   className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-emerald-200/30 blur-3xl"
                 />
 
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  fetchPriority="high"
-                  decoding="async"
-                  className="relative z-10 max-h-[400px] w-full object-contain"
-                />
+                {!imageFailed ? (
+                  <img
+                    key={imagePath}
+                    src={imagePath}
+                    alt={product.name}
+                    fetchPriority="high"
+                    decoding="async"
+                    className="relative z-10 max-h-[400px] w-full object-contain"
+                    onError={() => {
+                      console.error(
+                        "Product image failed to load:",
+                        imagePath
+                      );
+                      setImageFailed(true);
+                    }}
+                  />
+                ) : (
+                  <div className="relative z-10 flex min-h-[250px] w-full flex-col items-center justify-center text-center">
+                    <Bike
+                      size={64}
+                      strokeWidth={1.3}
+                      className="text-emerald-800"
+                    />
+                    <p className="mt-4 font-semibold text-slate-800">
+                      {product.name}
+                    </p>
+                    <p className="mt-2 text-sm text-slate-500">
+                      Product image is currently unavailable.
+                    </p>
+                  </div>
+                )}
 
                 <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full border border-white bg-white/90 px-3 py-2 text-xs font-semibold text-emerald-900 shadow-sm sm:bottom-6 sm:left-6">
                   <Zap size={14} />
@@ -122,6 +168,7 @@ const MobilityDetail = () => {
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-800">
                     <ShieldCheck size={20} />
                   </div>
+
                   <div>
                     <p className="text-sm font-semibold text-slate-900">
                       Vehicle details
@@ -136,6 +183,7 @@ const MobilityDetail = () => {
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-800">
                     <MessageCircle size={20} />
                   </div>
+
                   <div>
                     <p className="text-sm font-semibold text-slate-900">
                       Have questions?
@@ -164,21 +212,14 @@ const MobilityDetail = () => {
                 </p>
               )}
 
-              {/* Price */}
+              {/* Contact prompt */}
               <div className="mt-7 rounded-2xl border border-emerald-100 bg-gradient-to-r from-emerald-50/90 to-white p-5 sm:p-6">
-                <p className="text-sm font-medium text-slate-600">
-                  Listed price
+                <p className="text-lg font-bold text-slate-900">
+                  Interested in this vehicle?
                 </p>
-                <div className="mt-2 flex flex-wrap items-baseline gap-2">
-                  <span className="text-3xl font-bold tracking-tight text-emerald-800 sm:text-4xl">
-                    {product.basePrice.toLocaleString()}
-                  </span>
-                  <span className="text-base font-semibold text-slate-700">
-                    ETB
-                  </span>
-                </div>
-                <p className="mt-2 text-xs leading-5 text-slate-500">
-                  Please contact us to confirm current pricing and availability.
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  Contact our team for pricing, availability, and more
+                  information about this model.
                 </p>
               </div>
 
@@ -244,12 +285,14 @@ const MobilityDetail = () => {
               <p className="text-sm font-bold tracking-[0.16em] text-emerald-700">
                 GET TO KNOW YOUR VEHICLE
               </p>
+
               <h2 className="mt-3 text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">
-                Specifications & Features
+                Specifications &amp; Features
               </h2>
+
               <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600 sm:text-base">
-                Review the available technical details and features for this
-                model.
+                Review the available technical details and features for
+                this model.
               </p>
             </div>
 
@@ -258,7 +301,9 @@ const MobilityDetail = () => {
               {product.specs &&
                 Object.entries(product.specs).some(
                   ([, value]) =>
-                    value !== null && value !== undefined && value !== ""
+                    value !== null &&
+                    value !== undefined &&
+                    value !== ""
                 ) && (
                   <div className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
                     <h3 className="flex items-center gap-3 text-lg font-bold text-slate-900">
@@ -343,10 +388,6 @@ const MobilityDetail = () => {
                           <p className="mt-2 text-sm text-slate-600">
                             Capacity: {battery.capacity}
                           </p>
-                          <p className="mt-4 text-xl font-bold text-emerald-800">
-                            {battery.price.toLocaleString()}{" "}
-                            <span className="text-sm font-semibold">ETB</span>
-                          </p>
                         </div>
                       ))}
                     </div>
@@ -361,8 +402,8 @@ const MobilityDetail = () => {
                   Interested in this vehicle?
                 </h2>
                 <p className="mt-2 max-w-xl text-sm leading-6 text-emerald-50/90">
-                  Contact our team for more information about this model,
-                  pricing, and availability.
+                  Contact our team for pricing, availability, and more
+                  information about this model.
                 </p>
               </div>
 

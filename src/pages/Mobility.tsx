@@ -202,15 +202,11 @@ const Mobility = () => {
                         {product.description}
                       </p>
 
+                      {/* Price hidden on the Mobility listing page */}
                       <div className="mt-auto pt-5">
-                        <p className="text-xl font-bold tracking-tight text-emerald-800">
-                          {product.basePrice.toLocaleString()}{" "}
-                          <span className="text-sm font-semibold">ETB</span>
-                        </p>
-
                         <Link
                           to={`/mobility/${product.id}`}
-                          className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border border-emerald-200 px-4 py-3 text-sm font-semibold text-emerald-800 transition hover:border-emerald-800 hover:bg-emerald-800 hover:text-white"
+                          className="flex w-full items-center justify-center gap-2 rounded-xl border border-emerald-200 px-4 py-3 text-sm font-semibold text-emerald-800 transition hover:border-emerald-800 hover:bg-emerald-800 hover:text-white"
                         >
                           View Details
                           <ArrowRight size={16} />

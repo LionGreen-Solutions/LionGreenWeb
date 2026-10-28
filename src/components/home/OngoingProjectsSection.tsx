@@ -18,7 +18,7 @@ const projects = [
     id: 2,
     name: "StepG Tuk Tuk",
     category: "ELECTRIC URBAN TRANSPORT",
-    image: "/Images/Projects/A1L.jpg",
+    image: "/Images/Projects/OnGMOb.png",
     description:
       "Expanding beyond the university, StepG Tuk Tuk introduces a fleet of electric tuk-tuk powered by solar charging and battery-swap stations. This project aims to create a clean, affordable, and scalable ride system for cities, reducing emissions while modernizing urban transport infrastructure.",
   },

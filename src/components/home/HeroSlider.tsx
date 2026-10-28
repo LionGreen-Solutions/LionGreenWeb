@@ -12,9 +12,21 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
+
 const slides = [
   {
     id: 1,
+    eyebrow: "SUSTAINABLE TRANSPORTATION",
+    title: "Discover Electric Mobility",
+    description:
+      "Explore practical electric tricycles, bikes, and scooters for a cleaner journey.",
+    image: "/Images/mobility/HeroMob.png",
+    ctaText: "Explore Mobility",
+    ctaLink: "/mobility",
+    imagePosition: "center",
+  },
+  {
+    id: 2,
     eyebrow: "CLEAN ENERGY SOLUTIONS",
     title: "Solar Design & Consultation",
     description:
@@ -25,18 +37,8 @@ const slides = [
     ctaLink: "/consultation",
     imagePosition: "center",
   },
-  {
-    id: 2,
-    eyebrow: "SUSTAINABLE TRANSPORTATION",
-    title: "Discover Electric Mobility",
-    description:
-      "Explore practical electric tricycles, bikes, and scooters for a cleaner journey.",
-    image: "/Images/mobility/A0.webp",
-    ctaText: "Explore Mobility",
-    ctaLink: "/mobility",
-    imagePosition: "center",
-  },
 ];
+
 
 const HeroSlider = () => {
   const [api, setApi] = useState<CarouselApi>();

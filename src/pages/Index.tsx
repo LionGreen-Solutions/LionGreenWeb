@@ -12,6 +12,7 @@ import NewsletterSection from "@/components/home/NewsletterSection";
 import OngoingProjectsSection from "@/components/home/OngoingProjectsSection";
 import AboutSnippet from "@/components/home/AboutSnippet";
 import ProjectHighlight from "@/components/home/ProjectHighlight";
+import MobilityShowcase from "@/components/home/MobilityShowcase";
 
 const Index = () => {
   return (
@@ -26,6 +27,8 @@ const Index = () => {
       <div className="container mx-auto px-4 mt-8">
         <ServiceBanner />
       </div>
+
+      <MobilityShowcase />
 
       <AboutSnippet />
       
