@@ -40,7 +40,7 @@ const BenefitsSection = () => {
         {/* Section heading */}
         <div className="mx-auto mb-12 max-w-2xl text-center sm:mb-16">
           <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-800">
-            Why Lion Green Solutions?
+            Why LionGreenSolutions?
           </span>
 
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">

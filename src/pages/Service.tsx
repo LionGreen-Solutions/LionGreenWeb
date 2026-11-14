@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 const services = {
   "installation": {
     title: "Professional Installation Services",
-    description: "Expert installation of all Lion Green Solutions products by certified technicians.",
+    description: "Expert installation of all LionGreenSolutions products by certified technicians.",
     image: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80",
     benefits: [
       "Certified professionals with years of experience",

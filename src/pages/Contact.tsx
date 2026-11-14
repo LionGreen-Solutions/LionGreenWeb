@@ -12,7 +12,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const MAP_URL = "https://maps.app.goo.gl/f6VmVtffZAv2tADA6";
-const EMAIL = "lgs@liongreensolution.com";
+const EMAIL = "support@liongreensolution.com";
 const PHONE = "+251 977404142";
 
 export default function Contact() {
@@ -39,7 +39,7 @@ export default function Contact() {
     e.preventDefault();
 
     const subject = encodeURIComponent(
-      `${form.subject} - Lion Green Solution`
+      `${form.subject} - LionGreenSolutions`
     );
 
     const body = encodeURIComponent(
@@ -312,7 +312,7 @@ export default function Contact() {
 
               <div className="mt-6 overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
                 <iframe
-                  title="Lion Green Solution location"
+                  title="LionGreenSolutions location"
                   src="https://maps.google.com/maps?q=Bole%20Sub-City%2C%20Addis%20Ababa%2C%20Ethiopia&z=13&output=embed"
                   width="100%"
                   height="340"
@@ -324,7 +324,7 @@ export default function Contact() {
                 <div className="flex flex-col gap-3 p-5 sm:flex-row sm:items-center sm:justify-between">
                   <div>
                     <p className="font-semibold text-slate-800">
-                      Lion Green Solution
+                      LionGreenSolutions
                     </p>
                     <p className="mt-1 text-sm text-slate-500">
                       Addis Ababa, Ethiopia

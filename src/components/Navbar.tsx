@@ -53,11 +53,11 @@ const Navbar = () => {
         <Link
           to="/"
           className="flex shrink-0 items-center rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600"
-          aria-label="Lion Green Solutions home"
+          aria-label="LionGreenSolutions home"
         >
           <img
             src="/Images/Nav/LGS_Nav_icon.png"
-            alt="Lion Green Solutions"
+            alt="LionGreenSolutions"
             className="h-12 w-auto max-w-[190px] object-contain sm:h-14"
           />
         </Link>

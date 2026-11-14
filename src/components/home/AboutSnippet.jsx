@@ -17,7 +17,7 @@ export default function AboutSnippet() {
           <div>
             <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">
               <Leaf size={16} />
-              About Lion Green Solutions
+              About LionGreenSolutions
             </div>
 
             <h2 className="text-3xl font-bold leading-tight tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">
@@ -28,7 +28,7 @@ export default function AboutSnippet() {
             </h2>
 
             <p className="mt-6 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-              Lion Green Solutions Ethiopia PLC is building cleaner,
+              LionGreenSolutions is building cleaner,
               more accessible urban transportation through electric
               passenger tricycles, vehicle sales and rentals, and
               innovative energy solutions.

@@ -38,8 +38,8 @@ const Footer = () => {
   ];
 
   const legalLinks = [
-    { label: "Privacy Policy", to: "/privacy" },
-    { label: "Terms of Service", to: "/terms" },
+    { label: "Privacy Policy", to: "/laza-privacy-policy" },
+    { label: "Terms of Service", to: "/laza-terms" },
     { label: "Sitemap", to: "/sitemap" },
     { label: "Delete Account", to: "/laza-delete-account" },
   ];
@@ -86,11 +86,11 @@ const Footer = () => {
             <Link
               to="/"
               className="mb-5 inline-flex rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600"
-              aria-label="Lion Green Solutions home"
+              aria-label="LionGreenSolutions home"
             >
               <img
                 src="/Images/Nav/LGS_Nav_icon.png"
-                alt="Lion Green Solutions"
+                alt="LionGreenSolutions"
                 className="h-16 w-auto max-w-[230px] object-contain object-left"
                 loading="lazy"
               />
@@ -126,13 +126,13 @@ const Footer = () => {
               </a>
 
               <a
-                href="mailto:lgs@liongreensolution.com"
+                href="mailto:support@liongreensolution.com"
                 className="group flex items-center gap-3 transition-colors hover:text-emerald-800"
               >
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-800">
                   <Mail size={17} />
                 </span>
-                <span className="break-all">lgs@liongreensolution.com</span>
+                <span className="break-all">support@liongreensolution.com</span>
               </a>
 
               <div className="flex items-start gap-3">
@@ -230,7 +230,7 @@ const Footer = () => {
               onSubmit={(event) => {
                 event.preventDefault();
                 window.location.href =
-                  "mailto:info@liongreen.et?subject=" +
+                  "mailto:support@liongreensolution.com?subject=" +
                   encodeURIComponent("Newsletter subscription request");
               }}
             >
@@ -288,7 +288,7 @@ const Footer = () => {
         <div className="mx-auto max-w-7xl px-5 py-7 sm:px-8 lg:px-10">
           <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
             <p className="text-center text-xs leading-6 text-emerald-100 sm:text-sm lg:text-left">
-              © {year} Lion Green Solutions Ethiopia. All rights reserved.
+              © {year} LionGreenSolutions. All rights reserved.
             </p>
 
             <nav

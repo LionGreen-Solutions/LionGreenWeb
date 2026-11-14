@@ -114,7 +114,7 @@ const Mobility = () => {
                     <Bike size={54} strokeWidth={1.4} />
                   </div>
                   <p className="text-xs font-bold tracking-[0.2em] text-emerald-700">
-                    LION GREEN SOLUTIONS
+                    LionGreenSolutions
                   </p>
                   <h2 className="mt-3 text-2xl font-bold text-slate-900 sm:text-3xl">
                     The future is electric.

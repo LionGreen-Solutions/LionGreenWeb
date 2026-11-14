@@ -65,7 +65,7 @@ const ProjectHighlight = () => {
               <div className="relative overflow-hidden rounded-2xl bg-gray-100 shadow-xl">
                 <img
                   src="/Images/Projects/lion-green-project.jpg"
-                  alt="Lion Green Solutions solar infrastructure project"
+                  alt="LionGreenSolutions solar infrastructure project"
                   width={600}
                   height={400}
                   loading="lazy"
@@ -106,7 +106,7 @@ const ProjectHighlight = () => {
           <div className="pt-2 lg:col-span-7 lg:pt-0">
             <div className="mb-7">
               <p className="text-sm font-semibold uppercase tracking-wider text-green-700">
-                Lion Green Solutions Ethiopia PLC
+                LionGreenSolutions
               </p>
               <h3 className="mt-2 text-2xl font-bold text-gray-950 sm:text-3xl">
                 Relevant Experience

@@ -76,7 +76,7 @@ const About = () => {
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 shadow-sm">
                 <Leaf size={16} />
-                About Lion Green Solutions
+                About LionGreenSolutions
               </div>
 
               <h1 className="mt-6 max-w-3xl text-4xl font-bold leading-tight tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
@@ -87,7 +87,7 @@ const About = () => {
               </h1>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-                Lion Green Solutions Ethiopia PLC is a clean mobility company
+                LionGreenSolutions is a clean mobility company
                 focused on electric passenger tricycles. We bring together
                 vehicle sales, fleet rentals, solar-powered battery-swapping
                 stations, and digital ride-hailing services to help make urban
@@ -128,7 +128,7 @@ const About = () => {
               <div className="relative flex min-h-[280px] items-center justify-center overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-900/5 sm:min-h-[380px] sm:p-10">
                 <img
                   src="/Images/About/Lion Green logo.jpg"
-                  alt="Lion Green Solutions Ethiopia PLC"
+                  alt="LionGreenSolutions"
                   className="max-h-[320px] w-full object-contain"
                   fetchPriority="high"
                 />
@@ -343,7 +343,7 @@ const About = () => {
                 </h2>
                 <p className="mt-4 text-sm leading-7 text-emerald-50/80 sm:text-base">
                   Interested in our electric mobility or renewable energy
-                  solutions? Get in touch with Lion Green Solutions.
+                  solutions? Get in touch with LionGreenSolutions.
                 </p>
               </div>
 

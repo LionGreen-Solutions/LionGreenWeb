@@ -199,7 +199,7 @@ const MobilityDetail = () => {
             {/* Product information */}
             <div className="flex flex-col">
               <p className="text-sm font-bold tracking-[0.16em] text-emerald-700">
-                LION GREEN MOBILITY
+                LionGreenSolutions MOBILITY
               </p>
 
               <h1 className="mt-4 text-3xl font-bold leading-tight tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">

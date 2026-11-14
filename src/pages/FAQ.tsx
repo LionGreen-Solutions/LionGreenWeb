@@ -41,7 +41,7 @@ const faqCategories = [
       {
         id: "product-warranty",
         question: "What warranty do your products have?",
-        answer: "All Lion Green Solutions products come with a standard 24-month warranty against manufacturing defects. Solar panels typically have a 25-year performance warranty, while inverters and batteries have warranties ranging from 5-10 years."
+        answer: "All LionGreenSolutions products come with a standard 24-month warranty against manufacturing defects. Solar panels typically have a 25-year performance warranty, while inverters and batteries have warranties ranging from 5-10 years."
       },
       {
         id: "product-quality",

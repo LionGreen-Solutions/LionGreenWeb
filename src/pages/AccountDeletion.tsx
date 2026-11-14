@@ -68,7 +68,7 @@ export default function AccountDeletion() {
       {/* Hero Section */}
       <section className="bg-green-50 px-5 py-16 text-center sm:py-20">
         <p className="mb-3 text-sm font-bold uppercase tracking-widest text-green-700">
-          Lion Green Solution
+          LionGreenSolutions
         </p>
 
         <h1 className="text-3xl font-bold text-gray-900 sm:text-5xl">
@@ -238,7 +238,7 @@ export default function AccountDeletion() {
         </div>
 
         <p className="mx-auto mt-6 max-w-2xl text-center text-xs leading-5 text-gray-500">
-          Lion Green Solution · LAZA Account and Privacy Requests
+          LionGreenSolutions · LAZA Account and Privacy Requests
         </p>
 
       </section>

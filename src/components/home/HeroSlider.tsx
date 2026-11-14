@@ -61,7 +61,7 @@ const HeroSlider = () => {
 
   return (
     <section
-      aria-label="Featured Lion Green Solution services"
+      aria-label="Featured LionGreenSolutions services"
       className="relative w-full overflow-hidden bg-white"
     >
       <Carousel

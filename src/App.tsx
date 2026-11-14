@@ -2,7 +2,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import { CartProvider } from "@/context/CartContext";
 import Index from "./pages/Index";
 import About from "./pages/About";
@@ -59,6 +59,9 @@ function App() {
               <Route path="/laza-delete-account" element={<AccountDeletion />} />
               <Route path="/laza-privacy-policy" element={<LazaPrivacyPolicy />} />
               <Route path="/laza-terms" element={<LazaTerms />} />
+              <Route path="/privacy" element={<Navigate to="/laza-privacy-policy" replace />} />
+              <Route path="/terms" element={<Navigate to="/laza-terms" replace />} />
+              <Route path="/account-deletion" element={<Navigate to="/laza-delete-account" replace />} />
             </Routes>
           </BrowserRouter>
         </TooltipProvider>
