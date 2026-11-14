@@ -24,6 +24,8 @@ import CustomerDataCollection from "./pages/CustomerDataCollection";
 import DesignResults from "./pages/DesignResults";
 import NotFound from "./pages/NotFound";
 import AccountDeletion from "./pages/AccountDeletion";
+import LazaPrivacyPolicy from "./pages/LazaPrivacyPolicy";
+import LazaTerms from "./pages/LazaTerms";
 
 const queryClient = new QueryClient();
 
@@ -54,7 +56,9 @@ function App() {
               <Route path="/customer-data" element={<CustomerDataCollection />} />
               <Route path="/design-results" element={<DesignResults />} />
               <Route path="*" element={<NotFound />} />
-              <Route path="/delete-account" element={<AccountDeletion />} />
+              <Route path="/laza-delete-account" element={<AccountDeletion />} />
+              <Route path="/laza-privacy-policy" element={<LazaPrivacyPolicy />} />
+              <Route path="/laza-terms" element={<LazaTerms />} />
             </Routes>
           </BrowserRouter>
         </TooltipProvider>

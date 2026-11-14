@@ -41,7 +41,7 @@ const Footer = () => {
     { label: "Privacy Policy", to: "/privacy" },
     { label: "Terms of Service", to: "/terms" },
     { label: "Sitemap", to: "/sitemap" },
-    { label: "Delete Account", to: "/delete-account" },
+    { label: "Delete Account", to: "/laza-delete-account" },
   ];
 
   const socialLinks = [
