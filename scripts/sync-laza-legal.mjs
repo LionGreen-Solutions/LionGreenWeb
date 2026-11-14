@@ -7,7 +7,7 @@ const args = process.argv.slice(2);
 const check = args.includes("--check");
 const app = resolve(root, args.find((arg) => arg !== "--check") ?? "../volt-rider-app");
 const destination = resolve(root, "src/content/laza");
-const files = ["legal-content.ts", "privacy-content.ts", "retention-content.ts", "legal-contact.ts"];
+const files = ["legal-content.ts", "privacy-content.ts", "retention-content.ts", "account-deletion-content.ts", "legal-contact.ts"];
 
 // Copy only the app's public legal text. Normal website builds use the committed
 // copies and do not need access to the mobile app repository.

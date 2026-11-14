@@ -2,9 +2,12 @@
 // Run npm run sync:legal; edit the app source instead of this copy.
 
 import type { Language } from './types';
+import { ACCOUNT_DELETION_COPY } from './account-deletion-content';
 
 // These windows match the deployed telemetry-retention design in docs/telemetry-retention.md.
-// Account/support exceptions must be confirmed by the operator, not invented here.
+// The operator selected a 7-day post-deletion limit for separate support and ownership records.
+// Account deletion is due within 7 days after ownership verification.
+// Support must enforce it manually; telemetry cleanup does not cover these records.
 export const RETENTION_COPY = {
   en: {
     title: 'Data retention', data: 'Data', duration: 'Retention',
@@ -16,7 +19,8 @@ export const RETENTION_COPY = {
       ['Server upload receipts and intermediate snapshots', '24 hours'],
       ['Latest battery and vehicle status', 'Until replaced or the account/vehicle is deleted'],
       ['Profile photos', 'Until replaced, removed or the account is deleted'],
-      ['Accounts, profiles, vehicle registrations and support records', 'Outside telemetry expiry; contact support about applicable retention and deletion'],
+      ['Accounts, profiles and linked app vehicle records', `Until account deletion; outside routine history expiry. ${ACCOUNT_DELETION_COPY.en.completion}`],
+      ['Separate vehicle purchase/ownership records, support emails and tickets', 'Removed by support within 7 days (one week) after account deletion; support explains why any records are kept during that week'],
       ['Offline uploads on the phone', 'Until uploaded; confirmed queue history is eligible for cleanup after 24 hours'],
     ],
   },
@@ -30,7 +34,8 @@ export const RETENTION_COPY = {
       ['የአገልጋይ ስቀላ ደረሰኞችና ጊዜያዊ መረጃ', '24 ሰዓታት'],
       ['የቅርብ ባትሪና ተሽከርካሪ ሁኔታ', 'እስኪተካ ወይም መለያው/ተሽከርካሪው እስኪሰረዝ'],
       ['የመገለጫ ፎቶ', 'እስኪተካ፣ እስኪወገድ ወይም መለያው እስኪሰረዝ'],
-      ['መለያ፣ መገለጫ፣ የተሽከርካሪ ምዝገባና የእገዛ መዝገቦች', 'በቴሌሜትሪ ማብቂያ አይሰረዙም፤ ስለማቆያና ስረዛ እገዛን ያነጋግሩ'],
+      ['መለያ፣ መገለጫና የተያያዙ የመተግበሪያ ተሽከርካሪ መዝገቦች', `መለያው እስኪሰረዝ፤ በመደበኛ የታሪክ ጊዜ ገደብ አይሰረዙም። ${ACCOUNT_DELETION_COPY.am.completion}`],
+      ['የተለዩ የተሽከርካሪ ግዢና ባለቤትነት መዝገቦች፣ የእገዛ ኢሜይሎችና ጥያቄዎች', 'መለያው ከተሰረዘ በኋላ በ7 ቀናት (በአንድ ሳምንት) ውስጥ በእገዛ ይወገዳሉ፤ በዚያ ሳምንት የሚቀመጡበትን ምክንያት እገዛ ያብራራል'],
       ['በስልኩ ያሉ ያልተላኩ መዝገቦች', 'እስኪላኩ፤ የተረጋገጠ ስቀላ ታሪክ ከ24 ሰዓት በኋላ ሊጸዳ ይችላል'],
     ],
   },

@@ -1,9 +1,11 @@
 
 import { useState, type FormEvent } from "react";
+import { ACCOUNT_DELETION_COPY } from "@/content/laza/account-deletion-content";
 
 type RequestState = "idle" | "loading" | "success" | "error";
 
 export default function AccountDeletion() {
+  const deletion = ACCOUNT_DELETION_COPY.en;
   const [identifier, setIdentifier] = useState("");
   const [confirmed, setConfirmed] = useState(false);
   const [state, setState] = useState<RequestState>("idle");
@@ -49,7 +51,7 @@ export default function AccountDeletion() {
 
       setState("success");
       setMessage(
-        "Your request has been submitted. Please follow the identity verification instructions provided by our support team."
+        `Your request has been submitted. Please follow the identity verification instructions provided by our support team. ${deletion.completion}`
       );
 
       setIdentifier("");
@@ -95,6 +97,10 @@ export default function AccountDeletion() {
             Enter the email address or phone number associated
             with your LAZA account. We will verify your identity
             before processing your request.
+          </p>
+
+          <p className="mt-3 text-sm font-medium leading-6 text-gray-700">
+            {deletion.completion}
           </p>
 
           <form onSubmit={handleSubmit} className="mt-8 space-y-6">
@@ -166,49 +172,22 @@ export default function AccountDeletion() {
           {/* What happens next */}
           <div className="mt-8 border-t border-gray-200 pt-6">
             <h3 className="font-semibold text-gray-900">
-              What Happens Next?
+              {deletion.processTitle}
             </h3>
 
             <p className="mt-2 text-sm leading-6 text-gray-600">
-              1. Your deletion request will be received by our
-              support team.
-
-              <br />
-
-              2. We will verify your identity to protect your
-              account.
-
-              <br />
-
-              3. After verification, we will process the deletion
-              of eligible personal data associated with your
-              account.
-
-              <br />
-
-              4. We will notify you about the outcome of your
-              request.
+              {deletion.process}
             </p>
           </div>
 
           {/* Data Information */}
           <div className="mt-6 rounded-lg bg-gray-50 p-5">
             <h3 className="font-semibold text-gray-900">
-              What Data Will Be Deleted?
+              {deletion.retentionTitle}
             </h3>
 
             <p className="mt-2 text-sm leading-6 text-gray-600">
-              Depending on the data associated with your account,
-              deletion may include your profile information,
-              profile photo, vehicle associations, trip history,
-              battery records and other personal account data.
-            </p>
-
-            <p className="mt-3 text-sm leading-6 text-gray-600">
-              Certain records may be retained when required by
-              applicable laws or for legitimate security purposes.
-              Any retained information will be handled according
-              to our Privacy Policy.
+              {deletion.retention}
             </p>
           </div>
 

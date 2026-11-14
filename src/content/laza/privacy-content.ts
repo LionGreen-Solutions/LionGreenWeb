@@ -3,6 +3,7 @@
 
 import type { Language } from './types';
 import { PRIVACY_EMAIL } from './legal-contact';
+import { ACCOUNT_DELETION_COPY } from './account-deletion-content';
 
 export const PRIVACY_COPY = {
   en: {
@@ -54,12 +55,12 @@ export const PRIVACY_SECTIONS = {
     {
       icon: 'lock-closed-outline',
       title: 'How long information stays',
-      body: 'Raw GPS points, battery measurements and scan/connection history are retained for 7 days; range-analysis windows for 30 days; daily distance for 90 calendar days; and completed trip summaries for 90 days, or longer while referenced by retained records. Active trips remain available. Server upload receipts and intermediate snapshots are retained for 24 hours. Latest battery and vehicle status remain until replaced or the account/vehicle is deleted. Accounts, profiles, vehicle registrations and support records are outside telemetry expiry; ask support about applicable retention and deletion. Profile photos remain until replaced, removed or the account is deleted. Cleanup runs regularly and may lag during outages or backlogs. Pending uploads remain on your phone until sent; confirmed local queue history is eligible for cleanup after 24 hours, while other caches may remain. Signing out or uninstalling does not delete cloud data. Clearing app storage removes local data, including unsent records.',
+      body: 'Raw GPS points, battery measurements and scan/connection history are retained for 7 days; range-analysis windows for 30 days; daily distance for 90 calendar days; and completed trip summaries for 90 days, or longer while referenced by retained records. Active trips remain available. Server upload receipts and intermediate snapshots are retained for 24 hours. Latest battery and vehicle status remain until replaced or the account/vehicle is deleted. Accounts, profiles and linked app vehicle records remain until account deletion and are outside routine history expiry. Support removes separate vehicle purchase/ownership records, support emails and tickets within 7 days (one week) after account deletion, and explains why any records are kept during that week. Profile photos remain until replaced, removed or the account is deleted. Cleanup runs regularly and may lag during outages or backlogs. Pending uploads remain on your phone until sent; confirmed local queue history is eligible for cleanup after 24 hours, while other caches may remain. Signing out or uninstalling does not delete cloud data. Clearing app storage removes local data, including unsent records.',
     },
     {
       icon: 'options-outline',
       title: 'Correction, deletion and privacy questions',
-      body: 'You can edit your name and phone number in Profile. To request account deletion, associated-data deletion, correction or information about your data, open Profile > Delete account to submit an account-deletion request, or use the public deletion page or support email. A submitted request requires support processing and is not immediate deletion. For other data requests, contact support and explain what you need. We may need to verify that the account belongs to you. Never send your password or sign-in codes. Limited records may need to be retained where required by law; ask support about any applicable retention before deletion. Removing the app or signing out alone is not an account-deletion request.',
+      body: `You can edit your name and phone number in Profile. To request account deletion, associated-data deletion, correction or information about your data, open Profile > Delete account to submit an account-deletion request, or use the public deletion page or support email. A submitted request requires support processing and is not immediate deletion. For other data requests, contact support and explain what you need. We may need to verify that the account belongs to you. ${ACCOUNT_DELETION_COPY.en.completion} Never send your password or sign-in codes. Limited records may need to be retained where required by law; ask support about any applicable retention before deletion. Removing the app or signing out alone is not an account-deletion request.`,
     },
     {
       icon: 'options-outline',
@@ -101,12 +102,12 @@ export const PRIVACY_SECTIONS = {
     {
       icon: 'lock-closed-outline',
       title: 'መረጃ የሚቆይበት ጊዜ',
-      body: 'ጥሬ GPS ነጥቦች፣ የባትሪ መለኪያዎችና የቅኝት/ግንኙነት ታሪክ ለ7 ቀናት፣ የርቀት ትንተና መረጃ ለ30 ቀናት፣ የዕለት ርቀት ለ90 የቀን መቁጠሪያ ቀናት ይቀመጣሉ። የተጠናቀቁ ጉዞዎች ማጠቃለያ ለ90 ቀናት፣ ወይም ከሌሎች የተቀመጡ መዝገቦች ጋር ተያይዘው እስካሉ ድረስ ይቆያሉ። ንቁ ጉዞዎች ይቀመጣሉ። የአገልጋይ የጭነት ደረሰኞችና ጊዜያዊ የጉዞ ቅጂዎች ለ24 ሰዓት ይቆያሉ። የመጨረሻው የባትሪና የተሽከርካሪ ሁኔታ እስኪተካ ወይም መለያው/ተሽከርካሪው እስኪሰረዝ ድረስ ይቀመጣል። መለያዎች፣ መገለጫዎች፣ የተሽከርካሪ ምዝገባና የእገዛ መዝገቦች በዚህ የክትትል ጊዜ ገደብ አይሰረዙም፤ ስለማቆያና ስረዛ እገዛን ይጠይቁ። የመገለጫ ፎቶ እስኪተካ፣ እስኪወገድ ወይም መለያው እስኪሰረዝ ይቆያል። ጽዳት በመደበኛነት ይካሄዳል፤ በብልሽት ወይም በተከማቸ ስራ ሊዘገይ ይችላል። ያልተላከ መረጃ እስኪላክ በስልኩ ይቆያል፤ የተረጋገጠ የሰልፍ ታሪክ ከ24 ሰዓት በኋላ ሊጸዳ ይችላል። ከመለያ መውጣት ወይም መተግበሪያውን ማራገፍ የደመና መረጃን አይሰርዝም። ማከማቻ ማጽዳት ያልተላከ መረጃን ጨምሮ የአካባቢ መረጃን ያስወግዳል።',
+      body: 'ጥሬ GPS ነጥቦች፣ የባትሪ መለኪያዎችና የቅኝት/ግንኙነት ታሪክ ለ7 ቀናት፣ የርቀት ትንተና መረጃ ለ30 ቀናት፣ የዕለት ርቀት ለ90 የቀን መቁጠሪያ ቀናት ይቀመጣሉ። የተጠናቀቁ ጉዞዎች ማጠቃለያ ለ90 ቀናት፣ ወይም ከሌሎች የተቀመጡ መዝገቦች ጋር ተያይዘው እስካሉ ድረስ ይቆያሉ። ንቁ ጉዞዎች ይቀመጣሉ። የአገልጋይ የጭነት ደረሰኞችና ጊዜያዊ የጉዞ ቅጂዎች ለ24 ሰዓት ይቆያሉ። የመጨረሻው የባትሪና የተሽከርካሪ ሁኔታ እስኪተካ ወይም መለያው/ተሽከርካሪው እስኪሰረዝ ድረስ ይቀመጣል። መለያዎች፣ መገለጫዎችና የተያያዙ የመተግበሪያ ተሽከርካሪ መዝገቦች መለያው እስኪሰረዝ ይቆያሉ፤ በመደበኛ የታሪክ ጊዜ ገደብ አይሰረዙም። እገዛ የተለዩ የተሽከርካሪ ግዢና ባለቤትነት መዝገቦችን፣ የእገዛ ኢሜይሎችንና ጥያቄዎችን መለያው ከተሰረዘ በኋላ በ7 ቀናት (በአንድ ሳምንት) ውስጥ ያስወግዳል፤ በዚያ ሳምንት የሚቀመጡበትንም ምክንያት ያብራራል። የመገለጫ ፎቶ እስኪተካ፣ እስኪወገድ ወይም መለያው እስኪሰረዝ ይቆያል። ጽዳት በመደበኛነት ይካሄዳል፤ በብልሽት ወይም በተከማቸ ስራ ሊዘገይ ይችላል። ያልተላከ መረጃ እስኪላክ በስልኩ ይቆያል፤ የተረጋገጠ የሰልፍ ታሪክ ከ24 ሰዓት በኋላ ሊጸዳ ይችላል። ከመለያ መውጣት ወይም መተግበሪያውን ማራገፍ የደመና መረጃን አይሰርዝም። ማከማቻ ማጽዳት ያልተላከ መረጃን ጨምሮ የአካባቢ መረጃን ያስወግዳል።',
     },
     {
       icon: 'options-outline',
       title: 'ማስተካከያ፣ ስረዛ እና የግላዊነት ጥያቄዎች',
-      body: 'ስምዎንና ስልክ ቁጥርዎን ከመገለጫ ማስተካከል ይችላሉ። የመለያ ስረዛ፣ ተያያዥ የመረጃ ስረዛ፣ ማስተካከያ ወይም ስለ መረጃዎ ማብራሪያ ለመጠየቅ ከታች ያለውን እገዛ እና የመረጃ ጥያቄ ይጠቀሙ። ምን መጠየቅ እንደሚፈልጉ ይግለጹ። ከመገለጫ > መለያ ሰርዝ ጥያቄ ማቅረብ፣ ወይም የሕዝብ ስረዛ ገጽን ወይም ኢሜይልን መጠቀም ይችላሉ። የደረሰ ጥያቄ እገዛ እስኪያስኬደው ይጠብቃል፤ ወዲያውኑ ስረዛ አይደለም። መለያው የእርስዎ መሆኑን ማረጋገጥ ሊያስፈልገን ይችላል። የይለፍ ቃልዎን ወይም የመግቢያ ኮዶችን አይላኩ። በሕግ የሚፈለጉ ውስን መዝገቦች ሊቀመጡ ይችላሉ፤ ከስረዛ በፊት ስለሚመለከትዎ የማቆያ ጊዜ እገዛ ይጠይቁ። መተግበሪያውን ማራገፍ ወይም ከመለያ መውጣት ብቻ የመለያ ስረዛ ጥያቄ አይደለም።',
+      body: `ስምዎንና ስልክ ቁጥርዎን ከመገለጫ ማስተካከል ይችላሉ። የመለያ ስረዛ፣ ተያያዥ የመረጃ ስረዛ፣ ማስተካከያ ወይም ስለ መረጃዎ ማብራሪያ ለመጠየቅ ከታች ያለውን እገዛ እና የመረጃ ጥያቄ ይጠቀሙ። ምን መጠየቅ እንደሚፈልጉ ይግለጹ። ከመገለጫ > መለያ ሰርዝ ጥያቄ ማቅረብ፣ ወይም የሕዝብ ስረዛ ገጽን ወይም ኢሜይልን መጠቀም ይችላሉ። የደረሰ ጥያቄ እገዛ እስኪያስኬደው ይጠብቃል፤ ወዲያውኑ ስረዛ አይደለም። መለያው የእርስዎ መሆኑን ማረጋገጥ ሊያስፈልገን ይችላል። ${ACCOUNT_DELETION_COPY.am.completion} የይለፍ ቃልዎን ወይም የመግቢያ ኮዶችን አይላኩ። በሕግ የሚፈለጉ ውስን መዝገቦች ሊቀመጡ ይችላሉ፤ ከስረዛ በፊት ስለሚመለከትዎ የማቆያ ጊዜ እገዛ ይጠይቁ። መተግበሪያውን ማራገፍ ወይም ከመለያ መውጣት ብቻ የመለያ ስረዛ ጥያቄ አይደለም።`,
     },
     {
       icon: 'options-outline',

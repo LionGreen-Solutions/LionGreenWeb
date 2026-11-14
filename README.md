@@ -7,6 +7,9 @@ LionGreenSolutions is an innovative startup focused on e-mobility motorbike supp
 The terms at `/laza-terms` and privacy policy at `/laza-privacy-policy` display
 the app's current English and Amharic wording. Use the language buttons or add
 `?lang=am` to either URL. The deletion link points to `/laza-delete-account`.
+The deletion page also uses the app's English processing and retention wording,
+including the seven-day account-deletion deadline after ownership verification
+and the separate-record retention period after account deletion.
 
 Legal content in `src/content/laza/` is copied from the mobile app. After editing
 the app's `features/legal/` content, run `npm run sync:legal` in this repository,
