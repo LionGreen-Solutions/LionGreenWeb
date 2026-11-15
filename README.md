@@ -21,3 +21,48 @@ pass its path, for example `npm run sync:legal -- /path/to/volt-rider-app`.
 Only the public legal content is copied; normal builds use the committed files
 and do not require the app repository. Make wording changes in the app source,
 not in the generated copies.
+
+## Account-deletion submission
+
+The deletion form posts to the existing hosting endpoint
+`/api/account-deletion.php`. That PHP handler is not included in this checkout;
+building the Vite app does not install or update it. Preserve the existing
+`public_html/api/` directory when uploading frontend assets.
+
+The form requires a successful HTTP response with JSON content type and
+`{"success":true}` before confirming submission. An HTML fallback, malformed
+JSON, `success:false`, network error or 15-second timeout keeps the user's
+details available for retry. The page also provides the support email and the
+app's deletion scope. A submission acknowledgement does not prove inbox
+delivery or completed account deletion.
+
+Run the isolated submission tests with Node 22.20 or later:
+
+```sh
+node --experimental-strip-types --test scripts/account-deletion-request.test.mjs
+```
+
+Before marking delivery verified, an authorized operator must:
+
+1. Submit a clearly marked disposable test through the deployed form.
+2. Find that exact test in the monitored support inbox, including Spam if needed.
+   An HTTP success response or PHP `mail()` returning true is not proof of receipt.
+3. Verify ownership before deleting any real account. A supplied name, email
+   address or phone number alone is not proof of ownership.
+4. Follow the mobile repository's `docs/account-deletion-operations.md`: record
+   the verification time, operator and due date; remove the relevant app data
+   and storage; verify removal; confirm completion to the requester; track any
+   separate records through their documented retention deadline.
+
+On 15 November 2026, local submission tests passed. A separate hosted app
+backend test verified request recording, retry deduplication, account isolation,
+profile-photo removal, Auth/profile/request deletion, rejected sign-in/refresh,
+and preservation of a control account. Both disposable accounts were removed.
+This did not test the website's email delivery or staff fulfilment of deadlines.
+The user subsequently uploaded and extracted the prepared build through cPanel.
+On 15 November 2026, all three public legal URLs returned HTTP 200 and referenced
+the deployed JavaScript and CSS matching the prepared build byte for byte.
+The PHP endpoint still returned its expected HTTP 405 JSON response to a GET.
+Browser rendering and successful request delivery were not verified. The user's
+instruction to skip the website delivery test remains in effect; no test email
+was sent.

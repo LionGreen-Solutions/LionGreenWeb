@@ -1,6 +1,8 @@
 
-import { useState, type FormEvent } from "react";
+import { useRef, useState, type FormEvent } from "react";
 import { ACCOUNT_DELETION_COPY } from "@/content/laza/account-deletion-content";
+import { PRIVACY_EMAIL, privacyEmailUrl } from "@/content/laza/legal-contact";
+import { submitAccountDeletionRequest } from "@/lib/account-deletion-request";
 
 type RequestState = "idle" | "loading" | "success" | "error";
 
@@ -10,9 +12,11 @@ export default function AccountDeletion() {
   const [confirmed, setConfirmed] = useState(false);
   const [state, setState] = useState<RequestState>("idle");
   const [message, setMessage] = useState("");
+  const submitting = useRef(false);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (submitting.current) return;
 
     const accountIdentifier = identifier.trim();
 
@@ -28,30 +32,16 @@ export default function AccountDeletion() {
       return;
     }
 
+    submitting.current = true;
     setState("loading");
     setMessage("");
 
     try {
-      const response = await fetch(
-        "/api/account-deletion.php",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            identifier: accountIdentifier,
-          }),
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error("Request submission failed");
-      }
+      await submitAccountDeletionRequest(accountIdentifier);
 
       setState("success");
       setMessage(
-        `Your request has been submitted. Please follow the identity verification instructions provided by our support team. ${deletion.completion}`
+        `Your deletion request was submitted. Your account has not been deleted. Support will verify account ownership before processing it. ${deletion.completion}`
       );
 
       setIdentifier("");
@@ -59,8 +49,10 @@ export default function AccountDeletion() {
     } catch {
       setState("error");
       setMessage(
-        "We could not submit your request. Please try again later or contact our support team."
+        "We could not confirm your request. Your details are still here. You can retry or send a request using the support email below."
       );
+    } finally {
+      submitting.current = false;
     }
   }
 
@@ -103,7 +95,7 @@ export default function AccountDeletion() {
             {deletion.completion}
           </p>
 
-          <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+          <form onSubmit={handleSubmit} aria-busy={state === "loading"} className="mt-8 space-y-6">
 
             <div>
               <label
@@ -118,6 +110,7 @@ export default function AccountDeletion() {
                 type="text"
                 autoComplete="username"
                 required
+                disabled={state === "loading"}
                 maxLength={254}
                 value={identifier}
                 onChange={(e) => setIdentifier(e.target.value)}
@@ -130,6 +123,7 @@ export default function AccountDeletion() {
               <input
                 type="checkbox"
                 required
+                disabled={state === "loading"}
                 checked={confirmed}
                 onChange={(e) => setConfirmed(e.target.checked)}
                 className="mt-1 accent-green-700"
@@ -168,6 +162,22 @@ export default function AccountDeletion() {
             </button>
 
           </form>
+
+          <div className="mt-8 border-t border-gray-200 pt-6">
+            <h3 className="font-semibold text-gray-900">Request deletion by email</h3>
+            <a
+              href={privacyEmailUrl("LAZA account deletion request", deletion.emailBody)}
+              className="mt-3 inline-block break-all font-medium text-green-700 underline"
+            >
+              {PRIVACY_EMAIL}
+            </a>
+            <p className="mt-2 text-sm leading-6 text-gray-600">{deletion.notice}</p>
+          </div>
+
+          <div className="mt-6 rounded-lg bg-gray-50 p-5">
+            <h3 className="font-semibold text-gray-900">{deletion.scopeTitle}</h3>
+            <p className="mt-2 text-sm leading-6 text-gray-600">{deletion.scope}</p>
+          </div>
 
           {/* What happens next */}
           <div className="mt-8 border-t border-gray-200 pt-6">
